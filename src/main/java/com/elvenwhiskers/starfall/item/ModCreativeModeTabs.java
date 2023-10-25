@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.AEGIS_BLOCK.get());
                         output.accept(ModBlocks.RAW_AEGIS_BLOCK.get());
+                        output.accept(ModBlocks.AEGIS_ORE.get());
                     }).build());
 
 
