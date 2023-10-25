@@ -3,5 +3,9 @@
   "item.starfall.raw_aegis": "Raw Aegis",
 
   "block.starfall.aegis_block": "Aegis Block",
-  "block.starfall.raw_aegis_block": "Raw Aegis Block"
+  "block.starfall.raw_aegis_block": "Raw Aegis Block",
+
+
+
+  "creativetab.starfall_tab": "Tab of Stars"
 }
