@@ -5,6 +5,7 @@ import com.elvenwhiskers.starfall.block.custom.ModFlammableLeaves;
 import com.elvenwhiskers.starfall.block.custom.ModFlammablePlanks;
 import com.elvenwhiskers.starfall.block.custom.ModFlammableRotatedPillarBlock;
 import com.elvenwhiskers.starfall.item.ModItems;
+import com.elvenwhiskers.starfall.worldgen.tree.OpalTreeGrower;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -64,7 +65,7 @@ public class ModBlocks  {
             () -> new ModFlammableLeaves(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
     public static final RegistryObject<Block> OPAL_SAPLING = registerBlock("opal_sapling",
-            () -> new SaplingBlock(null, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new OpalTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
 
 
