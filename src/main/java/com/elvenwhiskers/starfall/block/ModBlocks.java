@@ -2,11 +2,10 @@ package com.elvenwhiskers.starfall.block;
 
 import com.elvenwhiskers.starfall.Starfall;
 import com.elvenwhiskers.starfall.item.ModItems;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -31,6 +30,22 @@ public class ModBlocks  {
     public static final RegistryObject<Block> AEGIS_ORE = registerBlock("aegis_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> BRIGHTSTONE = registerBlock("brightstone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(5f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> BRIGHTSTONE_BRICKS = registerBlock("brightstone_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(5f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CHISELED_BRIGHTSTONE = registerBlock("chiseled_brightstone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PUFFBALL_BLUE = registerBlock("puffball_blue",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 6, BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
+
+    public static final RegistryObject<Block> POTTED_PUFFBALL_BLUE = BLOCKS.register("potted_puffball_blue",
+            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), PUFFBALL_BLUE, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
 
 
 

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "aegis",
+  "key": {
+    "#": {
+      "item": "starfall:raw_aegis"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "starfall:raw_aegis_block"
+  },
+  "show_notification": true
+}

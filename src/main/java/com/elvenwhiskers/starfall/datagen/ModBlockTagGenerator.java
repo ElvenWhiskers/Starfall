@@ -23,12 +23,20 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.AEGIS_BLOCK.get(),
                         ModBlocks.RAW_AEGIS_BLOCK.get(),
-                        ModBlocks.AEGIS_ORE.get());
+                        ModBlocks.AEGIS_ORE.get(),
+                        ModBlocks.BRIGHTSTONE.get(),
+                        ModBlocks.BRIGHTSTONE_BRICKS.get(),
+                        ModBlocks.CHISELED_BRIGHTSTONE.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.AEGIS_BLOCK.get(),
                         ModBlocks.RAW_AEGIS_BLOCK.get(),
                         ModBlocks.AEGIS_ORE.get());
+
+        this.tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.BRIGHTSTONE.get(),
+                        ModBlocks.BRIGHTSTONE_BRICKS.get(),
+                        ModBlocks.CHISELED_BRIGHTSTONE.get());
     }
 
     @Override

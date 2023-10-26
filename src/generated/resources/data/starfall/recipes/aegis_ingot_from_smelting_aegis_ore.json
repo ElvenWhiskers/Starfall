@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "aegis",
+  "ingredient": {
+    "item": "starfall:aegis_ore"
+  },
+  "result": "starfall:aegis_ingot"
+}

@@ -5,6 +5,8 @@ import com.elvenwhiskers.starfall.item.ModCreativeModeTabs;
 import com.elvenwhiskers.starfall.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -37,7 +39,9 @@ public class Starfall {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.POTTED_PUFFBALL_BLUE.getId(), ModBlocks.POTTED_PUFFBALL_BLUE);
+        });
     }
 
     // Add the example block item to the building blocks tab

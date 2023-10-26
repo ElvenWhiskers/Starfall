@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "aegis",
+  "ingredients": [
+    {
+      "item": "starfall:raw_aegis_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "starfall:raw_aegis"
+  }
+}

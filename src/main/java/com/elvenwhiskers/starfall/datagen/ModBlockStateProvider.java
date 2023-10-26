@@ -19,6 +19,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.RAW_AEGIS_BLOCK);
 
         blockWithItem(ModBlocks.AEGIS_ORE);
+        blockWithItem(ModBlocks.BRIGHTSTONE);
+        blockWithItem(ModBlocks.BRIGHTSTONE_BRICKS);
+        blockWithItem(ModBlocks.CHISELED_BRIGHTSTONE);
+
+        simpleBlock(ModBlocks.PUFFBALL_BLUE.get(),
+                models().cross(blockTexture(ModBlocks.PUFFBALL_BLUE.get()).getPath(), blockTexture(ModBlocks.PUFFBALL_BLUE.get())).renderType("cutout"));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

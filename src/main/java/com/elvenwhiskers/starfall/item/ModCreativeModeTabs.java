@@ -24,6 +24,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.AEGIS_BLOCK.get());
                         output.accept(ModBlocks.RAW_AEGIS_BLOCK.get());
                         output.accept(ModBlocks.AEGIS_ORE.get());
+
+                        output.accept(ModBlocks.BRIGHTSTONE.get());
+                        output.accept(ModBlocks.BRIGHTSTONE_BRICKS.get());
+                        output.accept(ModBlocks.CHISELED_BRIGHTSTONE.get());
+
+                        output.accept(ModBlocks.PUFFBALL_BLUE.get());
                     }).build());
 
 

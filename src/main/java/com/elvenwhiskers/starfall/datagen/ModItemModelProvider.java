@@ -1,10 +1,12 @@
 package com.elvenwhiskers.starfall.datagen;
 
 import com.elvenwhiskers.starfall.Starfall;
+import com.elvenwhiskers.starfall.block.ModBlocks;
 import com.elvenwhiskers.starfall.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -20,6 +22,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.AEGIS_INGOT);
         simpleItem(ModItems.RAW_AEGIS);
 
+        simpleBlockItem(ModBlocks.PUFFBALL_BLUE);
+
+    }
+
+    private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(Starfall.MODID,"item/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
