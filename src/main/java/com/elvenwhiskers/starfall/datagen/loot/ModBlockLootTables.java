@@ -30,6 +30,17 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.POTTED_PUFFBALL_BLUE.get(),
                 createPotFlowerItemTable(ModBlocks.POTTED_PUFFBALL_BLUE.get()));
 
+        this.dropSelf(ModBlocks.OPAL_LOG.get());
+        this.dropSelf(ModBlocks.OPAL_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_OPAL_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_OPAL_WOOD.get());
+        this.dropSelf(ModBlocks.OPAL_PLANKS.get());
+        this.dropSelf(ModBlocks.OPAL_SAPLING.get());
+
+        this.add(ModBlocks.OPAL_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.OPAL_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+
     }
 
     @Override

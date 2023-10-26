@@ -37,6 +37,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.BRIGHTSTONE.get(),
                         ModBlocks.BRIGHTSTONE_BRICKS.get(),
                         ModBlocks.CHISELED_BRIGHTSTONE.get());
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.OPAL_LOG.get(),
+                        ModBlocks.OPAL_WOOD.get(),
+                        ModBlocks.STRIPPED_OPAL_LOG.get(),
+                        ModBlocks.STRIPPED_OPAL_WOOD.get());
+
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.OPAL_PLANKS.get());
+
     }
 
     @Override

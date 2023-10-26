@@ -40,7 +40,7 @@ public class Starfall {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.POTTED_PUFFBALL_BLUE.getId(), ModBlocks.POTTED_PUFFBALL_BLUE);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PUFFBALL_BLUE.getId(), ModBlocks.POTTED_PUFFBALL_BLUE);
         });
     }
 

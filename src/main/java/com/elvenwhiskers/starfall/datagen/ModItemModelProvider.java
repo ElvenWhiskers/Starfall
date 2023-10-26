@@ -23,7 +23,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_AEGIS);
 
         simpleBlockItem(ModBlocks.PUFFBALL_BLUE);
+        saplingItem(ModBlocks.OPAL_SAPLING);
 
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(Starfall.MODID,"block/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
