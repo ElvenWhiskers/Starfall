@@ -3,6 +3,8 @@ package com.elvenwhiskers.starfall;
 import com.elvenwhiskers.starfall.block.ModBlocks;
 import com.elvenwhiskers.starfall.item.ModCreativeModeTabs;
 import com.elvenwhiskers.starfall.item.ModItems;
+import com.elvenwhiskers.starfall.worldgen.biome.ModTerraBlenderAPI;
+import com.elvenwhiskers.starfall.worldgen.biome.surface.ModSurfaceRules;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
@@ -18,6 +20,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import terrablender.api.SurfaceRuleManager;
 
 @Mod(Starfall.MODID)
 public class Starfall {
@@ -32,6 +35,8 @@ public class Starfall {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModTerraBlenderAPI.registerRegions();
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -41,6 +46,8 @@ public class Starfall {
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PUFFBALL_BLUE.getId(), ModBlocks.POTTED_PUFFBALL_BLUE);
+
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MODID, ModSurfaceRules.makeRules());
         });
     }
 
