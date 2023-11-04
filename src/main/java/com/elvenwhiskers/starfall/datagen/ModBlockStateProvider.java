@@ -26,8 +26,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BRIGHTSTONE_BRICKS);
         blockWithItem(ModBlocks.CHISELED_BRIGHTSTONE);
 
-        simpleBlock(ModBlocks.PUFFBALL_BLUE.get(),
-                models().cross(blockTexture(ModBlocks.PUFFBALL_BLUE.get()).getPath(), blockTexture(ModBlocks.PUFFBALL_BLUE.get())).renderType("cutout"));
+        blockWithItem(ModBlocks.STARFALL_PORTAL);
+
+        //simpleBlock(ModBlocks.PUFFBALL_BLUE.get(),
+        //        models().cross(blockTexture(ModBlocks.PUFFBALL_BLUE.get()).getPath(), blockTexture(ModBlocks.PUFFBALL_BLUE.get())).renderType("cutout"));
+
+        simpleBlock(ModBlocks.PUFFBALL_PINK.get(),
+                models().cross(blockTexture(ModBlocks.PUFFBALL_PINK.get()).getPath(), blockTexture(ModBlocks.PUFFBALL_PINK.get())).renderType("cutout"));
 
         logBlock(((RotatedPillarBlock) ModBlocks.OPAL_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.OPAL_WOOD.get()), blockTexture(ModBlocks.OPAL_LOG.get()), blockTexture(ModBlocks.OPAL_LOG.get()));

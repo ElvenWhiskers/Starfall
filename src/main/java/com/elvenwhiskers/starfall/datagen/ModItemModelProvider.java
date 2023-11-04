@@ -23,6 +23,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_AEGIS);
 
         simpleBlockItem(ModBlocks.PUFFBALL_BLUE);
+        simpleBlockItem(ModBlocks.PUFFBALL_PINK);
         saplingItem(ModBlocks.OPAL_SAPLING);
 
     }

@@ -6,6 +6,9 @@ import com.elvenwhiskers.starfall.item.ModItems;
 import com.elvenwhiskers.starfall.worldgen.biome.ModTerraBlenderAPI;
 import com.elvenwhiskers.starfall.worldgen.biome.surface.ModSurfaceRules;
 import com.mojang.logging.LogUtils;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -46,6 +49,7 @@ public class Starfall {
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PUFFBALL_BLUE.getId(), ModBlocks.POTTED_PUFFBALL_BLUE);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PUFFBALL_PINK.getId(), ModBlocks.POTTED_PUFFBALL_PINK);
 
             SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MODID, ModSurfaceRules.makeRules());
         });

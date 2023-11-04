@@ -47,6 +47,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.PLANKS)
                 .add(ModBlocks.OPAL_PLANKS.get());
 
+        this.tag(BlockTags.FLOWERS)
+                .add(ModBlocks.PUFFBALL_BLUE.get(),
+                        ModBlocks.PUFFBALL_PINK.get());
+
+
     }
 
     @Override

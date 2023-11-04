@@ -30,6 +30,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CHISELED_BRIGHTSTONE.get());
 
                         output.accept(ModBlocks.PUFFBALL_BLUE.get());
+                        output.accept(ModBlocks.PUFFBALL_PINK.get());
 
                         output.accept(ModBlocks.OPAL_LOG.get());
                         output.accept(ModBlocks.OPAL_WOOD.get());
@@ -37,6 +38,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.STRIPPED_OPAL_WOOD.get());
                         output.accept(ModBlocks.OPAL_PLANKS.get());
                         output.accept(ModBlocks.OPAL_SAPLING.get());
+                        output.accept(ModBlocks.STARFALL_PORTAL.get());
                     }).build());
 
 

@@ -4,6 +4,7 @@ import com.elvenwhiskers.starfall.Starfall;
 import com.elvenwhiskers.starfall.block.custom.ModFlammableLeaves;
 import com.elvenwhiskers.starfall.block.custom.ModFlammablePlanks;
 import com.elvenwhiskers.starfall.block.custom.ModFlammableRotatedPillarBlock;
+import com.elvenwhiskers.starfall.block.custom.StarfallPortalBlock;
 import com.elvenwhiskers.starfall.item.ModItems;
 import com.elvenwhiskers.starfall.worldgen.tree.OpalTreeGrower;
 import net.minecraft.world.effect.MobEffects;
@@ -47,9 +48,13 @@ public class ModBlocks  {
 
     public static final RegistryObject<Block> PUFFBALL_BLUE = registerBlock("puffball_blue",
             () -> new FlowerBlock(() -> MobEffects.LUCK, 6, BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
+    public static final RegistryObject<Block> PUFFBALL_PINK = registerBlock("puffball_pink",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 6, BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
 
     public static final RegistryObject<Block> POTTED_PUFFBALL_BLUE = BLOCKS.register("potted_puffball_blue",
             () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), PUFFBALL_BLUE, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
+    public static final RegistryObject<Block> POTTED_PUFFBALL_PINK = BLOCKS.register("potted_puffball_pink",
+            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), PUFFBALL_PINK, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
 
     public static final RegistryObject<Block> OPAL_LOG = registerBlock("opal_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
@@ -66,6 +71,9 @@ public class ModBlocks  {
 
     public static final RegistryObject<Block> OPAL_SAPLING = registerBlock("opal_sapling",
             () -> new SaplingBlock(new OpalTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+    public static final RegistryObject<Block> STARFALL_PORTAL = registerBlock("starfall_portal",
+            () -> new StarfallPortalBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_PORTAL).noLootTable()));
 
 
 
