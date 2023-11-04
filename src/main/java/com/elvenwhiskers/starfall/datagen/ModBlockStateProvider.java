@@ -51,6 +51,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         leavesBlock(ModBlocks.OPAL_LEAVES);
         saplingBlock(ModBlocks.OPAL_SAPLING);
 
+        blockWithItem(ModBlocks.STARCROSSED_DIRT);
+
     }
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {

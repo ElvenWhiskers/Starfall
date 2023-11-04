@@ -8,6 +8,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 
 import javax.annotation.Nullable;
 import java.util.concurrent.CompletableFuture;
@@ -50,6 +51,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.FLOWERS)
                 .add(ModBlocks.PUFFBALL_BLUE.get(),
                         ModBlocks.PUFFBALL_PINK.get());
+
+        this.tag(BlockTags.DIRT)
+                .add(ModBlocks.STARCROSSED_DIRT.get());
 
 
     }

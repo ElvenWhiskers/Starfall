@@ -39,6 +39,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.OPAL_PLANKS.get());
                         output.accept(ModBlocks.OPAL_SAPLING.get());
                         output.accept(ModBlocks.STARFALL_PORTAL.get());
+
+                        output.accept(ModBlocks.STARCROSSED_GRASS_BLOCK.get());
+                        output.accept(ModBlocks.STARCROSSED_DIRT.get());
                     }).build());
 
 

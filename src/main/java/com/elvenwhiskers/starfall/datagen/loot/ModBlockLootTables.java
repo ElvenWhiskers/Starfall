@@ -22,6 +22,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.BRIGHTSTONE.get());
         this.dropSelf(ModBlocks.BRIGHTSTONE_BRICKS.get());
         this.dropSelf(ModBlocks.CHISELED_BRIGHTSTONE.get());
+        this.dropSelf(ModBlocks.STARCROSSED_DIRT.get());
 
         this.add(ModBlocks.AEGIS_ORE.get(),
                 block -> createOreDrop(ModBlocks.AEGIS_ORE.get(), ModItems.RAW_AEGIS.get()));
@@ -43,6 +44,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.OPAL_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.OPAL_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.otherWhenSilkTouch(ModBlocks.STARCROSSED_GRASS_BLOCK.get(), ModBlocks.STARCROSSED_DIRT.get());
 
 
     }

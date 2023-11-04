@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "snowy=false": [
+      {
+        "model": "starfall:block/starcrossed_grass_block"
+      },
+      {
+        "model": "starfall:block/starcrossed_grass_block",
+        "y": 90
+      },
+      {
+        "model": "starfall:block/starcrossed_grass_block",
+        "y": 180
+      },
+      {
+        "model": "starfall:block/starcrossed_grass_block",
+        "y": 270
+      }
+    ]
+  }
+}

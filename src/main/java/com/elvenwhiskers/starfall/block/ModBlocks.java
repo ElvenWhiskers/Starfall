@@ -75,6 +75,14 @@ public class ModBlocks  {
     public static final RegistryObject<Block> STARFALL_PORTAL = registerBlock("starfall_portal",
             () -> new StarfallPortalBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_PORTAL).noLootTable()));
 
+    public static final RegistryObject<Block> STARCROSSED_DIRT = registerBlock("starcrossed_dirt",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)
+                    .randomTicks().strength(0.5F).sound(SoundType.GRAVEL)));
+
+    public static final RegistryObject<Block> STARCROSSED_GRASS_BLOCK = registerBlock("starcrossed_grass_block",
+            () -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)
+                    .randomTicks().strength(0.6F).sound(SoundType.GRASS)));
+
 
 
 
