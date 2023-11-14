@@ -1,10 +1,7 @@
 package com.elvenwhiskers.starfall.block;
 
 import com.elvenwhiskers.starfall.Starfall;
-import com.elvenwhiskers.starfall.block.custom.ModFlammableLeaves;
-import com.elvenwhiskers.starfall.block.custom.ModFlammablePlanks;
-import com.elvenwhiskers.starfall.block.custom.ModFlammableRotatedPillarBlock;
-import com.elvenwhiskers.starfall.block.custom.StarfallPortalBlock;
+import com.elvenwhiskers.starfall.block.custom.*;
 import com.elvenwhiskers.starfall.item.ModItems;
 import com.elvenwhiskers.starfall.worldgen.tree.OpalTreeGrower;
 import net.minecraft.world.effect.MobEffects;
@@ -80,7 +77,7 @@ public class ModBlocks  {
                     .randomTicks().strength(0.5F).sound(SoundType.GRAVEL)));
 
     public static final RegistryObject<Block> STARCROSSED_GRASS_BLOCK = registerBlock("starcrossed_grass_block",
-            () -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)
+            () -> new ModGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)
                     .randomTicks().strength(0.6F).sound(SoundType.GRASS)));
 
 

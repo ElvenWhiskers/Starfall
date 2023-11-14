@@ -9,7 +9,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -19,10 +18,8 @@ import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import java.util.List;
 import java.util.Optional;
 
-public class ModGrassBlock implements BonemealableBlock {
-
-
-
+public class ModGrassBlock extends ModSpreadingSnowyDirtBlock implements BonemealableBlock {
+    public ModGrassBlock(Properties pProperties) {super(pProperties);}
 
     @Override
     public boolean isValidBonemealTarget(LevelReader pLevel, BlockPos pPos, BlockState pState, boolean pIsClient) {
@@ -31,13 +28,13 @@ public class ModGrassBlock implements BonemealableBlock {
 
     @Override
     public boolean isBonemealSuccess(Level pLevel, RandomSource pRandom, BlockPos pPos, BlockState pState) {
-        return false;
+        return true;
     }
 
     @Override
     public void performBonemeal(ServerLevel pLevel, RandomSource pRandom, BlockPos pPos, BlockState pState) {
         BlockPos blockpos = pPos.above();
-        //BlockState blockstate = ModBlocks.STARCROSSED_GRASS_BLOCK.defaultBlockState();
+        BlockState blockstate = ModBlocks.STARCROSSED_GRASS_BLOCK.get().defaultBlockState();
         Optional<Holder.Reference<PlacedFeature>> optional = pLevel.registryAccess().registryOrThrow(Registries.PLACED_FEATURE).getHolder(VegetationPlacements.GRASS_BONEMEAL);
 
         label49:
