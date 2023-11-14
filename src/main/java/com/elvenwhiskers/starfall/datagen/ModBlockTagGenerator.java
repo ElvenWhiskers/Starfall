@@ -53,7 +53,31 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.PUFFBALL_PINK.get());
 
         this.tag(BlockTags.DIRT)
-                .add(ModBlocks.STARCROSSED_DIRT.get());
+                .add(ModBlocks.STARCROSSED_DIRT.get(),
+                        ModBlocks.STARCROSSED_GRASS_BLOCK.get());
+
+        this.tag(BlockTags.ANIMALS_SPAWNABLE_ON)
+                .add(ModBlocks.STARCROSSED_DIRT.get(),
+                        ModBlocks.STARCROSSED_GRASS_BLOCK.get());
+
+        this.tag(BlockTags.AZALEA_GROWS_ON)
+                .add(ModBlocks.STARCROSSED_DIRT.get(),
+                        ModBlocks.STARCROSSED_GRASS_BLOCK.get());
+
+        this.tag(BlockTags.BAMBOO_PLANTABLE_ON)
+                .add(ModBlocks.STARCROSSED_DIRT.get(),
+                        ModBlocks.STARCROSSED_GRASS_BLOCK.get());
+
+        this.tag(BlockTags.FOXES_SPAWNABLE_ON)
+                .add(ModBlocks.STARCROSSED_DIRT.get(),
+                        ModBlocks.STARCROSSED_GRASS_BLOCK.get());
+
+        this.tag(BlockTags.LEAVES)
+                .add(ModBlocks.OPAL_LEAVES.get());
+
+        this.tag(BlockTags.VALID_SPAWN)
+                .add(ModBlocks.STARCROSSED_DIRT.get(),
+                        ModBlocks.STARCROSSED_GRASS_BLOCK.get());
 
 
     }

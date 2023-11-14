@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "starfall:block/starcrossed_dirt",
+    "particle": "starfall:block/starcrossed_dirt",
+    "side": "starfall:block/starcrossed_grass_block_snow",
+    "top": "starfall:block/starcrossed_grass_block_top"
+  }
+}
