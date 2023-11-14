@@ -1,5 +1,6 @@
 {
   "parent": "block/block",
+  "render_type": "cutout",
   "textures": {
     "particle": "starfall:block/starcrossed_dirt",
     "bottom": "starfall:block/starcrossed_dirt",
