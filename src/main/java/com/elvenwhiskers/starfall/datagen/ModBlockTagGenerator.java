@@ -27,7 +27,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.AEGIS_ORE.get(),
                         ModBlocks.BRIGHTSTONE.get(),
                         ModBlocks.BRIGHTSTONE_BRICKS.get(),
-                        ModBlocks.CHISELED_BRIGHTSTONE.get());
+                        ModBlocks.CHISELED_BRIGHTSTONE.get(),
+                        ModBlocks.COBBLED_BRIGHTSTONE.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.AEGIS_BLOCK.get(),
@@ -37,7 +38,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.BRIGHTSTONE.get(),
                         ModBlocks.BRIGHTSTONE_BRICKS.get(),
-                        ModBlocks.CHISELED_BRIGHTSTONE.get());
+                        ModBlocks.CHISELED_BRIGHTSTONE.get(),
+                        ModBlocks.COBBLED_BRIGHTSTONE.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.OPAL_LOG.get(),

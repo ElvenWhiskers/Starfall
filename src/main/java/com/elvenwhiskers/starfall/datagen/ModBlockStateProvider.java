@@ -25,14 +25,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BRIGHTSTONE);
         blockWithItem(ModBlocks.BRIGHTSTONE_BRICKS);
         blockWithItem(ModBlocks.CHISELED_BRIGHTSTONE);
+        blockWithItem(ModBlocks.COBBLED_BRIGHTSTONE);
 
         blockWithItem(ModBlocks.STARFALL_PORTAL);
 
         //simpleBlock(ModBlocks.PUFFBALL_BLUE.get(),
         //        models().cross(blockTexture(ModBlocks.PUFFBALL_BLUE.get()).getPath(), blockTexture(ModBlocks.PUFFBALL_BLUE.get())).renderType("cutout"));
-
-        simpleBlock(ModBlocks.PUFFBALL_PINK.get(),
-                models().cross(blockTexture(ModBlocks.PUFFBALL_PINK.get()).getPath(), blockTexture(ModBlocks.PUFFBALL_PINK.get())).renderType("cutout"));
+        //left for reference for later.
 
         logBlock(((RotatedPillarBlock) ModBlocks.OPAL_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.OPAL_WOOD.get()), blockTexture(ModBlocks.OPAL_LOG.get()), blockTexture(ModBlocks.OPAL_LOG.get()));
@@ -40,6 +39,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 new ResourceLocation(Starfall.MODID, "block/stripped_opal_log_top"));
         axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_OPAL_WOOD.get(), new ResourceLocation(Starfall.MODID, "block/stripped_opal_log"),
                 new ResourceLocation(Starfall.MODID, "block/stripped_opal_log"));
+
+        logBlock(((RotatedPillarBlock) ModBlocks.MAGNOLIA_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.MAGNOLIA_WOOD.get()), blockTexture(ModBlocks.MAGNOLIA_LOG.get()), blockTexture(ModBlocks.MAGNOLIA_LOG.get()));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_MAGNOLIA_LOG.get(), new ResourceLocation(Starfall.MODID, "block/stripped_magnolia_log"),
+                new ResourceLocation(Starfall.MODID, "block/stripped_magnolia_log_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_MAGNOLIA_WOOD.get(), new ResourceLocation(Starfall.MODID, "block/stripped_magnolia_log"),
+                new ResourceLocation(Starfall.MODID, "block/stripped_magnolia_log"));
 
         blockItem(ModBlocks.OPAL_LOG);
         blockItem(ModBlocks.OPAL_WOOD);
@@ -52,6 +58,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.OPAL_SAPLING);
 
         blockWithItem(ModBlocks.STARCROSSED_DIRT);
+
+        blockItem(ModBlocks.MAGNOLIA_LOG);
+        blockItem(ModBlocks.MAGNOLIA_WOOD);
+        blockItem(ModBlocks.STRIPPED_MAGNOLIA_LOG);
+        blockItem(ModBlocks.STRIPPED_MAGNOLIA_WOOD);
+
+        blockWithItem(ModBlocks.MAGNOLIA_PLANKS);
+
+        //blockWithItem(ModBlocks.BRIGHTSTONE_FURNACE);
+
+        //leavesBlock(ModBlocks.FANTASY_LEAVES);
 
     }
 

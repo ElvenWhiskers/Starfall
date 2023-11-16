@@ -8,8 +8,9 @@
   "block.starfall.brightstone": "Brightstone",
   "block.starfall.brightstone_bricks": "Brightstone Bricks",
   "block.starfall.chiseled_brightstone": "Chiseled Brightstone",
+  "block.starfall.cobbled_brightstone": "Cobbled Brightstone",
   "block.starfall.puffball_blue": "Blue Puffball",
-  "block.starfall.puffball_blue": "Pink Puffball",
+  "block.starfall.puffball_pink": "Pink Puffball",
   "block.starfall.opal_log": "Opal Log",
   "block.starfall.opal_wood": "Opal Wood",
   "block.starfall.stripped_opal_log": "Stripped Opal Log",
@@ -20,6 +21,13 @@
   "block.starfall.starfall_portal": "Starfall Portal",
   "block.starfall.starcrossed_dirt": "Starcrossed Dirt",
   "block.starfall.starcrossed_grass_block": "Starcrossed Grass",
+  "block.starfall.magnolia_log": "Magnolia Log",
+  "block.starfall.magnolia_wood": "Magnolia Wood",
+  "block.starfall.stripped_magnolia_log": "Stripped Magnolia Log",
+  "block.starfall.stripped_magnolia_wood": "Stripped Magnolia Wood",
+  "block.starfall.magnolia_planks": "Magnolia planks",
+  "block.starfall.fantasy_leaves": "Fantasy Leaves",
+  "block.starfall.brightstone_furnace": "Brightstone Furnace",
 
 
 

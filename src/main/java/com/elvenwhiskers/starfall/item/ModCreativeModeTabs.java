@@ -28,6 +28,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BRIGHTSTONE.get());
                         output.accept(ModBlocks.BRIGHTSTONE_BRICKS.get());
                         output.accept(ModBlocks.CHISELED_BRIGHTSTONE.get());
+                        output.accept(ModBlocks.COBBLED_BRIGHTSTONE.get());
 
                         output.accept(ModBlocks.PUFFBALL_BLUE.get());
                         output.accept(ModBlocks.PUFFBALL_PINK.get());
@@ -38,10 +39,21 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.STRIPPED_OPAL_WOOD.get());
                         output.accept(ModBlocks.OPAL_PLANKS.get());
                         output.accept(ModBlocks.OPAL_SAPLING.get());
+                        output.accept(ModBlocks.OPAL_LEAVES.get());
                         output.accept(ModBlocks.STARFALL_PORTAL.get());
 
                         output.accept(ModBlocks.STARCROSSED_GRASS_BLOCK.get());
                         output.accept(ModBlocks.STARCROSSED_DIRT.get());
+
+                        output.accept(ModBlocks.MAGNOLIA_LOG.get());
+                        output.accept(ModBlocks.MAGNOLIA_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_MAGNOLIA_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_MAGNOLIA_WOOD.get());
+                        output.accept(ModBlocks.MAGNOLIA_PLANKS.get());
+                        output.accept(ModBlocks.FANTASY_LEAVES.get());
+
+                        output.accept(ModBlocks.BRIGHTSTONE_FURNACE.get());
+
                     }).build());
 
 

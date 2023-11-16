@@ -3,10 +3,10 @@
 	"ambientocclusion": false,
 	"render_type": "cutout",
 	"textures": {
-		"3": "starfall:block/bluebits",
+		"3": "starfall:block/pinkbits",
 		"4": "starfall:block/flowerbase",
-		"5": "starfall:block/outter_puff_blue",
-		"particle": "starfall:block/outter_puff_blue"
+		"5": "starfall:block/outter_puff_pink",
+		"particle": "starfall:block/outter_puff_pink"
 	},
 	"elements": [
 		{
