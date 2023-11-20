@@ -52,6 +52,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_MAGNOLIA_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_MAGNOLIA_WOOD.get());
         this.dropSelf(ModBlocks.MAGNOLIA_PLANKS.get());
+        this.dropSelf(ModBlocks.MAGNOLIA_SAPLING.get());
 
         this.add(ModBlocks.OPAL_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.OPAL_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
@@ -62,7 +63,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.BRIGHTSTONE.get(), customSilkTouchDrop(ModBlocks.BRIGHTSTONE.get(), ModBlocks.COBBLED_BRIGHTSTONE.get()));
         this.add(ModBlocks.STARCROSSED_GRASS_BLOCK.get(), customSilkTouchDrop(ModBlocks.STARCROSSED_GRASS_BLOCK.get(), ModBlocks.STARCROSSED_DIRT.get()));
 
-        this.dropSelf(ModBlocks.BRIGHTSTONE_FURNACE.get());
 
 
     }

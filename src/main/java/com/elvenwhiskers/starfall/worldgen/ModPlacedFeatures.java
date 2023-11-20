@@ -18,6 +18,7 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> OPALIZED_PLACED_KEY = registerKey("opalized_placed");
+    public static final ResourceKey<PlacedFeature> MAGNOLIA_PLACED_KEY = registerKey("magnolia_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -25,6 +26,10 @@ public class ModPlacedFeatures {
         register(context, OPALIZED_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OPALIZED_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
                         ModBlocks.OPAL_SAPLING.get()));
+
+        register(context, MAGNOLIA_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MAGNOLIA_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
+                        ModBlocks.MAGNOLIA_SAPLING.get()));
 
     }
 

@@ -3,6 +3,7 @@ package com.elvenwhiskers.starfall.block;
 import com.elvenwhiskers.starfall.Starfall;
 import com.elvenwhiskers.starfall.block.custom.*;
 import com.elvenwhiskers.starfall.item.ModItems;
+import com.elvenwhiskers.starfall.worldgen.tree.MagnoliaTreeGrower;
 import com.elvenwhiskers.starfall.worldgen.tree.OpalTreeGrower;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -100,9 +101,9 @@ public class ModBlocks  {
     public static final RegistryObject<Block> MAGNOLIA_PLANKS = registerBlock("magnolia_planks",
             () -> new ModFlammablePlanks(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> BRIGHTSTONE_FURNACE = registerBlock("brightstone_furnace",
-            () -> new FurnaceBlock(BlockBehaviour.Properties.copy(Blocks.FURNACE)
-                    .strength(3.5f).requiresCorrectToolForDrops().lightLevel(litBlockEmission(13))));
+    public static final RegistryObject<Block> MAGNOLIA_SAPLING = registerBlock("magnolia_sapling",
+            () -> new SaplingBlock(new MagnoliaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
 
 
 

@@ -19,10 +19,10 @@ public class ModBiomeModifiers {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
 
-        context.register(ADD_TREE_OPAL, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.OPALIZED_PLACED_KEY)),
-                GenerationStep.Decoration.VEGETAL_DECORATION));
+        //context.register(ADD_TREE_OPAL, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        //        biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+        //        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.OPALIZED_PLACED_KEY)),
+         //       GenerationStep.Decoration.VEGETAL_DECORATION));
 
 
     }

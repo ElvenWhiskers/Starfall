@@ -50,9 +50,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.STRIPPED_MAGNOLIA_LOG.get());
                         output.accept(ModBlocks.STRIPPED_MAGNOLIA_WOOD.get());
                         output.accept(ModBlocks.MAGNOLIA_PLANKS.get());
+                        output.accept(ModBlocks.MAGNOLIA_SAPLING.get());
                         output.accept(ModBlocks.FANTASY_LEAVES.get());
-
-                        output.accept(ModBlocks.BRIGHTSTONE_FURNACE.get());
 
                     }).build());
 

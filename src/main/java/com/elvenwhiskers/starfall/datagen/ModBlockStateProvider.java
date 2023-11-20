@@ -65,6 +65,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.STRIPPED_MAGNOLIA_WOOD);
 
         blockWithItem(ModBlocks.MAGNOLIA_PLANKS);
+        saplingBlock(ModBlocks.MAGNOLIA_SAPLING);
 
         //blockWithItem(ModBlocks.BRIGHTSTONE_FURNACE);
 

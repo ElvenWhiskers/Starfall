@@ -18,6 +18,7 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlac
 
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OPALIZED_KEY = registerKey("opalized");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MAGNOLIA_KEY = registerKey("magnolia");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -26,6 +27,13 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.OPAL_LOG.get()),
                 new StraightTrunkPlacer(5, 4, 3),
                 BlockStateProvider.simple(ModBlocks.OPAL_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+
+        register(context, MAGNOLIA_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.MAGNOLIA_LOG.get()),
+                new StraightTrunkPlacer(5, 4, 3),
+                BlockStateProvider.simple(ModBlocks.FANTASY_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
     }
