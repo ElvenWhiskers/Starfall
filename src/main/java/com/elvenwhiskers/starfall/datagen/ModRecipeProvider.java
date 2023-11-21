@@ -6,6 +6,7 @@ import com.elvenwhiskers.starfall.item.ModItems;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -54,6 +55,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_brightstone", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModBlocks.BRIGHTSTONE.get()).build()))
                 .save(pWriter);
+
+        treeParts(pWriter, RecipeCategory.MISC, ModBlocks.OPAL_LOG.get(), ModBlocks.OPAL_WOOD.get(), ModBlocks.OPAL_PLANKS.get(), ModBlocks.STRIPPED_OPAL_LOG.get(), ModBlocks.STRIPPED_OPAL_WOOD.get());
+
+
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
@@ -75,5 +80,40 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                             pCookingSerializer).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
                     .save(pFinishedRecipeConsumer, Starfall.MODID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
         }
+    }
+
+    protected static void treeParts(Consumer<FinishedRecipe> pFinishedRecipe, RecipeCategory pCategory, ItemLike pLog, ItemLike pWood, ItemLike pPlanks, ItemLike pSTLog, ItemLike pSTWood){
+        ShapelessRecipeBuilder.shapeless(pCategory, pPlanks, 4)
+                .requires(pLog)
+                .unlockedBy("has_" + getItemName(pLog), inventoryTrigger(ItemPredicate.Builder.item().
+                        of(pLog).build()))
+                .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pPlanks) + "_from_" + getItemName(pLog));
+
+        ShapelessRecipeBuilder.shapeless(pCategory, pPlanks, 4)
+                .requires(pWood)
+                .unlockedBy("has_" + getItemName(pWood), inventoryTrigger(ItemPredicate.Builder.item().
+                        of(pWood).build()))
+                .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pPlanks) + "_from_" + getItemName(pWood));
+
+        ShapedRecipeBuilder.shaped(pCategory, Items.STICK, 4)
+                .pattern("A")
+                .pattern("A")
+                .define('A', pPlanks)
+                .unlockedBy("has_" + getItemName(pPlanks), inventoryTrigger(ItemPredicate.Builder.item().
+                        of(pPlanks).build()))
+                .save(pFinishedRecipe, Starfall.MODID + ":" + "sticks_from_" + getItemName(pPlanks));
+
+        ShapelessRecipeBuilder.shapeless(pCategory, pPlanks, 4)
+                .requires(pSTLog)
+                .unlockedBy("has_" + getItemName(pSTLog), inventoryTrigger(ItemPredicate.Builder.item().
+                        of(pSTLog).build()))
+                .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pPlanks) + "_from_" + getItemName(pSTLog));
+
+        ShapelessRecipeBuilder.shapeless(pCategory, pPlanks, 4)
+                .requires(pSTWood)
+                .unlockedBy("has_" + getItemName(pSTWood), inventoryTrigger(ItemPredicate.Builder.item().
+                        of(pSTWood).build()))
+                .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pPlanks) + "_from_" + getItemName(pSTWood));
+
     }
 }
