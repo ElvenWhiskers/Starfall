@@ -30,6 +30,18 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.CHISELED_BRIGHTSTONE.get(),
                         ModBlocks.COBBLED_BRIGHTSTONE.get());
 
+        this.tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.OPAL_LOG.get(),
+                        ModBlocks.OPAL_WOOD.get(),
+                        ModBlocks.OPAL_PLANKS.get(),
+                        ModBlocks.STRIPPED_OPAL_LOG.get(),
+                        ModBlocks.STRIPPED_OPAL_WOOD.get(),
+                        ModBlocks.MAGNOLIA_LOG.get(),
+                        ModBlocks.MAGNOLIA_WOOD.get(),
+                        ModBlocks.MAGNOLIA_PLANKS.get(),
+                        ModBlocks.STRIPPED_MAGNOLIA_LOG.get(),
+                        ModBlocks.STRIPPED_MAGNOLIA_WOOD.get());
+
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.AEGIS_BLOCK.get(),
                         ModBlocks.RAW_AEGIS_BLOCK.get(),
@@ -45,10 +57,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.OPAL_LOG.get(),
                         ModBlocks.OPAL_WOOD.get(),
                         ModBlocks.STRIPPED_OPAL_LOG.get(),
-                        ModBlocks.STRIPPED_OPAL_WOOD.get());
+                        ModBlocks.STRIPPED_OPAL_WOOD.get(),
+                        ModBlocks.MAGNOLIA_LOG.get(),
+                        ModBlocks.MAGNOLIA_WOOD.get(),
+                        ModBlocks.STRIPPED_MAGNOLIA_LOG.get(),
+                        ModBlocks.STRIPPED_MAGNOLIA_WOOD.get());
 
         this.tag(BlockTags.PLANKS)
-                .add(ModBlocks.OPAL_PLANKS.get());
+                .add(ModBlocks.OPAL_PLANKS.get(),
+                        ModBlocks.MAGNOLIA_PLANKS.get());
 
         this.tag(BlockTags.FLOWERS)
                 .add(ModBlocks.PUFFBALL_BLUE.get(),

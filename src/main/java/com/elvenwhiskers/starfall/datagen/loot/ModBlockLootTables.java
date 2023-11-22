@@ -58,7 +58,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.OPAL_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(ModBlocks.FANTASY_LEAVES.get(), block ->
-                createLeavesDrops(block, ModBlocks.OPAL_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+                createLeavesDrops(block, ModBlocks.MAGNOLIA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(ModBlocks.BRIGHTSTONE.get(), customSilkTouchDrop(ModBlocks.BRIGHTSTONE.get(), ModBlocks.COBBLED_BRIGHTSTONE.get()));
         this.add(ModBlocks.STARCROSSED_GRASS_BLOCK.get(), customSilkTouchDrop(ModBlocks.STARCROSSED_GRASS_BLOCK.get(), ModBlocks.STARCROSSED_DIRT.get()));

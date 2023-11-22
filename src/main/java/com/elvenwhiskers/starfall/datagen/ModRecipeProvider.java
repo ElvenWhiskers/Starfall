@@ -57,6 +57,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
         treeParts(pWriter, RecipeCategory.MISC, ModBlocks.OPAL_LOG.get(), ModBlocks.OPAL_WOOD.get(), ModBlocks.OPAL_PLANKS.get(), ModBlocks.STRIPPED_OPAL_LOG.get(), ModBlocks.STRIPPED_OPAL_WOOD.get());
+        treeParts(pWriter, RecipeCategory.MISC, ModBlocks.MAGNOLIA_LOG.get(), ModBlocks.MAGNOLIA_WOOD.get(), ModBlocks.MAGNOLIA_PLANKS.get(), ModBlocks.STRIPPED_MAGNOLIA_LOG.get(), ModBlocks.STRIPPED_MAGNOLIA_WOOD.get());
 
 
     }
@@ -114,6 +115,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_" + getItemName(pSTWood), inventoryTrigger(ItemPredicate.Builder.item().
                         of(pSTWood).build()))
                 .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pPlanks) + "_from_" + getItemName(pSTWood));
+
+        ShapedRecipeBuilder.shaped(pCategory, pWood, 4)
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', pLog)
+                .unlockedBy("has_" + getItemName(pWood), inventoryTrigger(ItemPredicate.Builder.item().
+                        of(pWood).build()))
+                .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pWood) + "_from_" + getItemName(pLog));
+
+        ShapedRecipeBuilder.shaped(pCategory, pSTWood, 4)
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', pSTLog)
+                .unlockedBy("has_" + getItemName(pSTWood), inventoryTrigger(ItemPredicate.Builder.item().
+                        of(pSTWood).build()))
+                .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pSTWood) + "_from_" + getItemName(pSTLog));
 
     }
 }

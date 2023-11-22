@@ -51,7 +51,7 @@ public class Starfall {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PUFFBALL_BLUE.getId(), ModBlocks.POTTED_PUFFBALL_BLUE);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PUFFBALL_PINK.getId(), ModBlocks.POTTED_PUFFBALL_PINK);
 
-            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MODID, ModSurfaceRules.makeRules());
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MODID, ModSurfaceRules.makeBiomeRules());
         });
     }
 

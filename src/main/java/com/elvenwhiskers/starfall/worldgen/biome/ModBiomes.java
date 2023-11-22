@@ -63,12 +63,12 @@ public class ModBiomes {
                 .generationSettings(biomeBuilder.build())
                 .mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
-                        .waterColor(0xccdbf2)
-                        .waterFogColor(0xccf2e3)
-                        .skyColor(0xcceef2)
-                        .grassColorOverride(0xccf2e3)
-                        .foliageColorOverride(0xccf2d0)
-                        .fogColor(0xe3ccf2)
+                        .waterColor(0x9fe8db)
+                        .waterFogColor(0x9fe8db)
+                        .skyColor(0xf0f8ff)
+                        .grassColorOverride(0x90e582)
+                        .foliageColorOverride(0xc5e582)
+                        .fogColor(0xbcf9ff)
                         .ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS)
                         .backgroundMusic(Musics.createGameMusic(SoundEvents.MUSIC_GAME)).build())
                 .build();
@@ -99,7 +99,7 @@ public class ModBiomes {
 
         BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
         BiomeDefaultFeatures.addDefaultExtraVegetation(biomeBuilder);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.OPALIZED_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.MAGNOLIA_PLACED_KEY);
 
         return new Biome.BiomeBuilder()
                 .hasPrecipitation(true)
@@ -108,12 +108,12 @@ public class ModBiomes {
                 .generationSettings(biomeBuilder.build())
                 .mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
-                        .waterColor(0xe82e3b)
-                        .waterFogColor(0xbf1b26)
+                        .waterColor(0x10ccf5)
+                        .waterFogColor(0x10ccf5)
                         .skyColor(0x30c918)
-                        .grassColorOverride(0x7f03fc)
-                        .foliageColorOverride(0xd203fc)
-                        .fogColor(0x22a1e6)
+                        .grassColorOverride(0x63eefc)
+                        .foliageColorOverride(0xf8bbff)
+                        .fogColor(0xbbffe7)
                         .ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS)
                         .backgroundMusic(Musics.createGameMusic(SoundEvents.MUSIC_GAME)).build())
                 .build();

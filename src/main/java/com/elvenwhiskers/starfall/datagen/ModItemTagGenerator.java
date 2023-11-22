@@ -25,10 +25,15 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.OPAL_LOG.get().asItem())
                 .add(ModBlocks.OPAL_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_OPAL_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_OPAL_WOOD.get().asItem());
+                .add(ModBlocks.STRIPPED_OPAL_WOOD.get().asItem())
+                .add(ModBlocks.MAGNOLIA_LOG.get().asItem())
+                .add(ModBlocks.MAGNOLIA_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_MAGNOLIA_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_MAGNOLIA_WOOD.get().asItem());
 
         this.tag(ItemTags.PLANKS)
-                .add(ModBlocks.OPAL_PLANKS.get().asItem());
+                .add(ModBlocks.OPAL_PLANKS.get().asItem())
+                .add(ModBlocks.MAGNOLIA_PLANKS.get().asItem());
 
     }
 

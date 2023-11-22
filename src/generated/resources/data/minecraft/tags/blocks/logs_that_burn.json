@@ -3,6 +3,10 @@
     "starfall:opal_log",
     "starfall:opal_wood",
     "starfall:stripped_opal_log",
-    "starfall:stripped_opal_wood"
+    "starfall:stripped_opal_wood",
+    "starfall:magnolia_log",
+    "starfall:magnolia_wood",
+    "starfall:stripped_magnolia_log",
+    "starfall:stripped_magnolia_wood"
   ]
 }
