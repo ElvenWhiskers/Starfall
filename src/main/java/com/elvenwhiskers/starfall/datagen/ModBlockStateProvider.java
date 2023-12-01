@@ -29,7 +29,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.SIOUX_QUARTZITE);
 
-        blockWithItem(ModBlocks.CATLINEITE);
+        blockWithItem(ModBlocks.CATLINITE);
+        blockWithItem(ModBlocks.LIGHT_BLUE_CATLINITE);
+        blockWithItem(ModBlocks.LIME_CATLINITE);
+        blockWithItem(ModBlocks.YELLOW_CATLINITE);
+        blockWithItem(ModBlocks.ORANGE_CATLINITE);
+        blockWithItem(ModBlocks.BLUE_CATLINITE);
+        blockWithItem(ModBlocks.MAGENTA_CATLINITE);
+        blockWithItem(ModBlocks.PURPLE_CATLINITE);
+        blockWithItem(ModBlocks.PINK_CATLINITE);
 
         blockWithItem(ModBlocks.STARFALL_PORTAL);
 
@@ -58,12 +66,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_LARKSPUR_WOOD.get(), new ResourceLocation(Starfall.MODID, "block/stripped_larkspur_log"),
                 new ResourceLocation(Starfall.MODID, "block/stripped_larkspur_log"));
 
+        blockWithItem(ModBlocks.OPAL_PLANKS);
         blockItem(ModBlocks.OPAL_LOG);
         blockItem(ModBlocks.OPAL_WOOD);
         blockItem(ModBlocks.STRIPPED_OPAL_LOG);
         blockItem(ModBlocks.STRIPPED_OPAL_WOOD);
 
-        blockWithItem(ModBlocks.OPAL_PLANKS);
+        plankShapes(ModBlocks.OPAL_PLANKS.get(), ModBlocks.OPAL_STAIRS.get(), ModBlocks.OPAL_SLAB.get(), ModBlocks.OPAL_BUTTON.get(),
+                ModBlocks.OPAL_PRESSURE_PLATE.get(), ModBlocks.OPAL_FENCE.get(), ModBlocks.OPAL_FENCE_GATE.get(), ModBlocks.OPAL_WALL.get());
+        doorBlockWithRenderType((DoorBlock)ModBlocks.OPAL_DOOR.get(), modLoc("block/opal_door_bottom"), modLoc("block/opal_door_top"), "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.OPAL_TRAPDOOR.get(), modLoc("block/opal_trapdoor"), true, "cutout");
+
+        blockItem(ModBlocks.OPAL_STAIRS);
+        blockItem(ModBlocks.OPAL_SLAB);
+        blockItem(ModBlocks.OPAL_PRESSURE_PLATE);
+        blockItem(ModBlocks.OPAL_FENCE_GATE);
+        blockItem(ModBlocks.OPAL_TRAPDOOR, "_bottom");
 
         leavesBlock(ModBlocks.OPAL_LEAVES);
         saplingBlock(ModBlocks.OPAL_SAPLING);
@@ -110,5 +128,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    }
+
+    private void plankShapes(Block plankType, Block stairType, Block slabType, Block buttonType, Block pressureType, Block fenceType, Block fenceGateType, Block wallType){
+        stairsBlock((StairBlock) stairType, blockTexture(plankType));
+        slabBlock(((SlabBlock) slabType), blockTexture(plankType), blockTexture(plankType));
+        buttonBlock((ButtonBlock) buttonType, blockTexture(plankType));
+        pressurePlateBlock((PressurePlateBlock) pressureType, blockTexture(plankType));
+        fenceBlock((FenceBlock) fenceType, blockTexture(plankType));
+        fenceGateBlock((FenceGateBlock) fenceGateType, blockTexture(plankType));
+        wallBlock((WallBlock) wallType, blockTexture(plankType));
     }
 }

@@ -8,6 +8,14 @@
     "starfall:chiseled_brightstone",
     "starfall:cobbled_brightstone",
     "starfall:sioux_quartzite",
-    "starfall:catlinite"
+    "starfall:catlinite",
+    "starfall:light_blue_catlinite",
+    "starfall:lime_catlinite",
+    "starfall:yellow_catlinite",
+    "starfall:orange_catlinite",
+    "starfall:blue_catlinite",
+    "starfall:magenta_catlinite",
+    "starfall:purple_catlinite",
+    "starfall:pink_catlinite"
   ]
 }

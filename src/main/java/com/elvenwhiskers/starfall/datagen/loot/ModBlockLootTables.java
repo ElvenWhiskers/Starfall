@@ -31,7 +31,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.SIOUX_QUARTZITE.get());
 
-        this.dropSelf(ModBlocks.CATLINEITE.get());
+        this.dropSelf(ModBlocks.CATLINITE.get());
+        this.dropSelf(ModBlocks.LIGHT_BLUE_CATLINITE.get());
+        this.dropSelf(ModBlocks.LIME_CATLINITE.get());
+        this.dropSelf(ModBlocks.YELLOW_CATLINITE.get());
+        this.dropSelf(ModBlocks.ORANGE_CATLINITE.get());
+        this.dropSelf(ModBlocks.BLUE_CATLINITE.get());
+        this.dropSelf(ModBlocks.MAGENTA_CATLINITE.get());
+        this.dropSelf(ModBlocks.PURPLE_CATLINITE.get());
+        this.dropSelf(ModBlocks.PINK_CATLINITE.get());
 
         this.add(ModBlocks.AEGIS_ORE.get(),
                 block -> createOreDrop(ModBlocks.AEGIS_ORE.get(), ModItems.RAW_AEGIS.get()));
@@ -39,14 +47,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.PUFFBALL_BLUE.get());
         this.add(ModBlocks.POTTED_PUFFBALL_BLUE.get(),
                 createPotFlowerItemTable(ModBlocks.POTTED_PUFFBALL_BLUE.get()));
-
         this.dropSelf(ModBlocks.PUFFBALL_PINK.get());
         this.add(ModBlocks.POTTED_PUFFBALL_PINK.get(),
                 createPotFlowerItemTable(ModBlocks.POTTED_PUFFBALL_PINK.get()));
-
         this.dropSelf(ModBlocks.PUFFBALL_ORANGE.get());
         this.add(ModBlocks.POTTED_PUFFBALL_ORANGE.get(),
                 createPotFlowerItemTable(ModBlocks.POTTED_PUFFBALL_ORANGE.get()));
+        this.dropSelf(ModBlocks.PUFFBALL_PURPLE.get());
+        this.add(ModBlocks.POTTED_PUFFBALL_PURPLE.get(),
+                createPotFlowerItemTable(ModBlocks.POTTED_PUFFBALL_PURPLE.get()));
+        this.dropSelf(ModBlocks.PUFFBALL_WHITE.get());
+        this.add(ModBlocks.POTTED_PUFFBALL_WHITE.get(),
+                createPotFlowerItemTable(ModBlocks.POTTED_PUFFBALL_WHITE.get()));
 
         this.dropSelf(ModBlocks.OPAL_LOG.get());
         this.dropSelf(ModBlocks.OPAL_WOOD.get());
@@ -54,6 +66,17 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_OPAL_WOOD.get());
         this.dropSelf(ModBlocks.OPAL_PLANKS.get());
         this.dropSelf(ModBlocks.OPAL_SAPLING.get());
+        this.dropSelf(ModBlocks.OPAL_STAIRS.get());
+        this.add(ModBlocks.OPAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.OPAL_SLAB.get()));
+        this.dropSelf(ModBlocks.OPAL_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.OPAL_BUTTON.get());
+        this.dropSelf(ModBlocks.OPAL_FENCE.get());
+        this.dropSelf(ModBlocks.OPAL_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.OPAL_WALL.get());
+        this.dropSelf(ModBlocks.OPAL_TRAPDOOR.get());
+        this.add(ModBlocks.OPAL_DOOR.get(),
+                block -> createDoorTable(ModBlocks.OPAL_DOOR.get()));
 
         this.dropSelf(ModBlocks.MAGNOLIA_LOG.get());
         this.dropSelf(ModBlocks.MAGNOLIA_WOOD.get());

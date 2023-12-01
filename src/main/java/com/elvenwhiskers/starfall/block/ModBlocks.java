@@ -5,12 +5,14 @@ import com.elvenwhiskers.starfall.block.custom.*;
 import com.elvenwhiskers.starfall.item.ModItems;
 import com.elvenwhiskers.starfall.worldgen.tree.MagnoliaTreeGrower;
 import com.elvenwhiskers.starfall.worldgen.tree.OpalTreeGrower;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -54,7 +56,31 @@ public class ModBlocks  {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(5f).requiresCorrectToolForDrops()));
 
-    public static final RegistryObject<Block> CATLINEITE = registerBlock("catlinite",
+    public static final RegistryObject<Block> CATLINITE = registerBlock("catlinite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LIGHT_BLUE_CATLINITE = registerBlock("light_blue_catlinite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LIME_CATLINITE = registerBlock("lime_catlinite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> YELLOW_CATLINITE = registerBlock("yellow_catlinite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ORANGE_CATLINITE = registerBlock("orange_catlinite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> BLUE_CATLINITE = registerBlock("blue_catlinite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MAGENTA_CATLINITE = registerBlock("magenta_catlinite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PURPLE_CATLINITE = registerBlock("purple_catlinite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PINK_CATLINITE = registerBlock("pink_catlinite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)
                     .strength(1.25f).requiresCorrectToolForDrops()));
 
@@ -65,6 +91,10 @@ public class ModBlocks  {
             () -> new FlowerBlock(() -> MobEffects.LUCK, 6, BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
     public static final RegistryObject<Block> PUFFBALL_ORANGE = registerBlock("puffball_orange",
             () -> new FlowerBlock(() -> MobEffects.LUCK, 6, BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
+    public static final RegistryObject<Block> PUFFBALL_PURPLE = registerBlock("puffball_purple",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 6, BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
+    public static final RegistryObject<Block> PUFFBALL_WHITE = registerBlock("puffball_white",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 6, BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
 
     public static final RegistryObject<Block> POTTED_PUFFBALL_BLUE = BLOCKS.register("potted_puffball_blue",
             () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), PUFFBALL_BLUE, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
@@ -72,6 +102,10 @@ public class ModBlocks  {
             () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), PUFFBALL_PINK, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
     public static final RegistryObject<Block> POTTED_PUFFBALL_ORANGE = BLOCKS.register("potted_puffball_orange",
             () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), PUFFBALL_ORANGE, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
+    public static final RegistryObject<Block> POTTED_PUFFBALL_PURPLE = BLOCKS.register("potted_puffball_purple",
+            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), PUFFBALL_PURPLE, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
+    public static final RegistryObject<Block> POTTED_PUFFBALL_WHITE = BLOCKS.register("potted_puffball_white",
+            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), PUFFBALL_WHITE, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
 
     public static final RegistryObject<Block> OPAL_LOG = registerBlock("opal_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
@@ -85,7 +119,26 @@ public class ModBlocks  {
             () -> new ModFlammablePlanks(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> OPAL_LEAVES = registerBlock("opal_leaves",
             () -> new ModFlammableLeaves(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
-
+    public static final RegistryObject<Block> OPAL_STAIRS = registerBlock("opal_stairs",
+            () -> new StairBlock(() -> ModBlocks.OPAL_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> OPAL_SLAB = registerBlock("opal_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> OPAL_PRESSURE_PLATE = registerBlock("opal_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).sound(SoundType.WOOD), BlockSetType.OAK));
+    public static final RegistryObject<Block> OPAL_BUTTON = registerBlock("opal_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD), BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> OPAL_FENCE = registerBlock("opal_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+    public static final RegistryObject<Block> OPAL_FENCE_GATE = registerBlock("opal_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    public static final RegistryObject<Block> OPAL_WALL = registerBlock("opal_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE_WALL)));
+    public static final RegistryObject<Block> OPAL_DOOR = registerBlock("opal_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK));
+    public static final RegistryObject<Block> OPAL_TRAPDOOR = registerBlock("opal_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK));
     public static final RegistryObject<Block> OPAL_SAPLING = registerBlock("opal_sapling",
             () -> new SaplingBlock(new OpalTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 

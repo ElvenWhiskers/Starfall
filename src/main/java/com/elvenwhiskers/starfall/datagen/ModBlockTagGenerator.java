@@ -30,7 +30,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.CHISELED_BRIGHTSTONE.get(),
                         ModBlocks.COBBLED_BRIGHTSTONE.get(),
                         ModBlocks.SIOUX_QUARTZITE.get(),
-                        ModBlocks.CATLINEITE.get());
+                        ModBlocks.CATLINITE.get(),
+                        ModBlocks.LIGHT_BLUE_CATLINITE.get(),
+                        ModBlocks.LIME_CATLINITE.get(),
+                        ModBlocks.YELLOW_CATLINITE.get(),
+                        ModBlocks.ORANGE_CATLINITE.get(),
+                        ModBlocks.BLUE_CATLINITE.get(),
+                        ModBlocks.MAGENTA_CATLINITE.get(),
+                        ModBlocks.PURPLE_CATLINITE.get(),
+                        ModBlocks.PINK_CATLINITE.get());
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.OPAL_LOG.get(),
@@ -60,7 +68,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.CHISELED_BRIGHTSTONE.get(),
                         ModBlocks.COBBLED_BRIGHTSTONE.get(),
                         ModBlocks.SIOUX_QUARTZITE.get(),
-                        ModBlocks.CATLINEITE.get());
+                        ModBlocks.CATLINITE.get(),
+                        ModBlocks.LIGHT_BLUE_CATLINITE.get(),
+                        ModBlocks.LIME_CATLINITE.get(),
+                        ModBlocks.YELLOW_CATLINITE.get(),
+                        ModBlocks.ORANGE_CATLINITE.get(),
+                        ModBlocks.BLUE_CATLINITE.get(),
+                        ModBlocks.MAGENTA_CATLINITE.get(),
+                        ModBlocks.PURPLE_CATLINITE.get(),
+                        ModBlocks.PINK_CATLINITE.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.OPAL_LOG.get(),
@@ -84,7 +100,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.FLOWERS)
                 .add(ModBlocks.PUFFBALL_BLUE.get(),
                         ModBlocks.PUFFBALL_PINK.get(),
-                        ModBlocks.PUFFBALL_ORANGE.get());
+                        ModBlocks.PUFFBALL_ORANGE.get(),
+                        ModBlocks.PUFFBALL_PURPLE.get(),
+                        ModBlocks.PUFFBALL_WHITE.get());
 
         this.tag(BlockTags.DIRT)
                 .add(ModBlocks.STARCROSSED_DIRT.get(),
@@ -112,6 +130,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.VALID_SPAWN)
                 .add(ModBlocks.STARCROSSED_DIRT.get(),
                         ModBlocks.STARCROSSED_GRASS_BLOCK.get());
+
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.OPAL_FENCE.get());
+
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.OPAL_WALL.get());
+
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.OPAL_FENCE_GATE.get());
 
 
     }

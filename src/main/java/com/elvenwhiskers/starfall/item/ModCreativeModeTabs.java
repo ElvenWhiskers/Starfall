@@ -32,11 +32,21 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.SIOUX_QUARTZITE.get());
 
-                        output.accept(ModBlocks.CATLINEITE.get());
+                        output.accept(ModBlocks.CATLINITE.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_CATLINITE.get());
+                        output.accept(ModBlocks.LIME_CATLINITE.get());
+                        output.accept(ModBlocks.YELLOW_CATLINITE.get());
+                        output.accept(ModBlocks.ORANGE_CATLINITE.get());
+                        output.accept(ModBlocks.BLUE_CATLINITE.get());
+                        output.accept(ModBlocks.MAGENTA_CATLINITE.get());
+                        output.accept(ModBlocks.PURPLE_CATLINITE.get());
+                        output.accept(ModBlocks.PINK_CATLINITE.get());
 
                         output.accept(ModBlocks.PUFFBALL_BLUE.get());
                         output.accept(ModBlocks.PUFFBALL_PINK.get());
                         output.accept(ModBlocks.PUFFBALL_ORANGE.get());
+                        output.accept(ModBlocks.PUFFBALL_PURPLE.get());
+                        output.accept(ModBlocks.PUFFBALL_WHITE.get());
 
                         output.accept(ModBlocks.OPAL_LOG.get());
                         output.accept(ModBlocks.OPAL_WOOD.get());
@@ -45,6 +55,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.OPAL_PLANKS.get());
                         output.accept(ModBlocks.OPAL_SAPLING.get());
                         output.accept(ModBlocks.OPAL_LEAVES.get());
+                        output.accept(ModBlocks.OPAL_STAIRS.get());
+                        output.accept(ModBlocks.OPAL_SLAB.get());
+                        output.accept(ModBlocks.OPAL_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.OPAL_BUTTON.get());
+                        output.accept(ModBlocks.OPAL_FENCE.get());
+                        output.accept(ModBlocks.OPAL_FENCE_GATE.get());
+                        output.accept(ModBlocks.OPAL_WALL.get());
+                        output.accept(ModBlocks.OPAL_DOOR.get());
+                        output.accept(ModBlocks.OPAL_TRAPDOOR.get());
+
                         output.accept(ModBlocks.STARFALL_PORTAL.get());
 
                         output.accept(ModBlocks.STARCROSSED_GRASS_BLOCK.get());
