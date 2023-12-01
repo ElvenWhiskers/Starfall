@@ -66,9 +66,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         treeParts(pWriter, RecipeCategory.MISC, ModBlocks.CALLALILY_LOG.get(), ModBlocks.CALLALILY_WOOD.get(), ModBlocks.CALLALILY_PLANKS.get(), ModBlocks.STRIPPED_CALLALILY_LOG.get(), ModBlocks.STRIPPED_CALLALILY_WOOD.get());
         treeParts(pWriter, RecipeCategory.MISC, ModBlocks.SWEETPEA_LOG.get(), ModBlocks.SWEETPEA_WOOD.get(), ModBlocks.SWEETPEA_PLANKS.get(), ModBlocks.STRIPPED_SWEETPEA_LOG.get(), ModBlocks.STRIPPED_SWEETPEA_WOOD.get());
 
-        //Next add SHAPES, UGH
+        //Next add SHAPES, UGH, this was initally a pain
         plankShapeParts(pWriter, ModBlocks.OPAL_PLANKS.get(), ModBlocks.OPAL_BUTTON.get(), ModBlocks.OPAL_DOOR.get(), ModBlocks.OPAL_FENCE.get(), ModBlocks.OPAL_FENCE_GATE.get(), ModBlocks.OPAL_PRESSURE_PLATE.get(),
                 ModBlocks.OPAL_SLAB.get(), ModBlocks.OPAL_STAIRS.get(), ModBlocks.OPAL_TRAPDOOR.get(), ModBlocks.OPAL_WALL.get());
+        plankShapeParts(pWriter, ModBlocks.MAGNOLIA_PLANKS.get(), ModBlocks.MAGNOLIA_BUTTON.get(), ModBlocks.MAGNOLIA_DOOR.get(), ModBlocks.MAGNOLIA_FENCE.get(), ModBlocks.MAGNOLIA_FENCE_GATE.get(), ModBlocks.MAGNOLIA_PRESSURE_PLATE.get(),
+                ModBlocks.MAGNOLIA_SLAB.get(), ModBlocks.MAGNOLIA_STAIRS.get(), ModBlocks.MAGNOLIA_TRAPDOOR.get(), ModBlocks.MAGNOLIA_WALL.get());
+        plankShapeParts(pWriter, ModBlocks.LARKSPUR_PLANKS.get(), ModBlocks.LARKSPUR_BUTTON.get(), ModBlocks.LARKSPUR_DOOR.get(), ModBlocks.LARKSPUR_FENCE.get(), ModBlocks.LARKSPUR_FENCE_GATE.get(), ModBlocks.LARKSPUR_PRESSURE_PLATE.get(),
+                ModBlocks.LARKSPUR_SLAB.get(), ModBlocks.LARKSPUR_STAIRS.get(), ModBlocks.LARKSPUR_TRAPDOOR.get(), ModBlocks.LARKSPUR_WALL.get());
+        plankShapeParts(pWriter, ModBlocks.CALLALILY_PLANKS.get(), ModBlocks.CALLALILY_BUTTON.get(), ModBlocks.CALLALILY_DOOR.get(), ModBlocks.CALLALILY_FENCE.get(), ModBlocks.CALLALILY_FENCE_GATE.get(), ModBlocks.CALLALILY_PRESSURE_PLATE.get(),
+                ModBlocks.CALLALILY_SLAB.get(), ModBlocks.CALLALILY_STAIRS.get(), ModBlocks.CALLALILY_TRAPDOOR.get(), ModBlocks.CALLALILY_WALL.get());
+        plankShapeParts(pWriter, ModBlocks.SWEETPEA_PLANKS.get(), ModBlocks.SWEETPEA_BUTTON.get(), ModBlocks.SWEETPEA_DOOR.get(), ModBlocks.SWEETPEA_FENCE.get(), ModBlocks.SWEETPEA_FENCE_GATE.get(), ModBlocks.SWEETPEA_PRESSURE_PLATE.get(),
+                ModBlocks.SWEETPEA_SLAB.get(), ModBlocks.SWEETPEA_STAIRS.get(), ModBlocks.SWEETPEA_TRAPDOOR.get(), ModBlocks.SWEETPEA_WALL.get());
 
     }
 

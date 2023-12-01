@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_callalily_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "starfall:callalily_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "starfall:callalily_button_from_callalily_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_callalily_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "starfall:callalily_button_from_callalily_planks"
+    ]
+  },
+  "sends_telemetry_event": false
+}

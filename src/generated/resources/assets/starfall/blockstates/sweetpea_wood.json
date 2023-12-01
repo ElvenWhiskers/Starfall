@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "starfall:block/sweetpea_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "starfall:block/sweetpea_wood"
+    },
+    "axis=z": {
+      "model": "starfall:block/sweetpea_wood_horizontal",
+      "x": 90
+    }
+  }
+}

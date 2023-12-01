@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stripped_callalily_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "starfall:stripped_callalily_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "starfall:stripped_callalily_wood_from_stripped_callalily_log"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_stripped_callalily_wood",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "starfall:stripped_callalily_wood_from_stripped_callalily_log"
+    ]
+  },
+  "sends_telemetry_event": false
+}

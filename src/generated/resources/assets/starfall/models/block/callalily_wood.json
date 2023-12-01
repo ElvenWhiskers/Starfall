@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "starfall:block/callalily_log",
+    "side": "starfall:block/callalily_log"
+  }
+}

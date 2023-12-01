@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_callalily_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "starfall:callalily_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "starfall:callalily_planks_from_callalily_wood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_callalily_wood",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "starfall:callalily_planks_from_callalily_wood"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "starfall:block/opal_slab"
+    },
+    "type=double": {
+      "model": "starfall:block/opal_planks"
+    },
+    "type=top": {
+      "model": "starfall:block/opal_slab_top"
+    }
+  }
+}

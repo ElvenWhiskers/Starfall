@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "starfall:block/sweetpea_slab"
+    },
+    "type=double": {
+      "model": "starfall:block/sweetpea_planks"
+    },
+    "type=top": {
+      "model": "starfall:block/sweetpea_slab_top"
+    }
+  }
+}

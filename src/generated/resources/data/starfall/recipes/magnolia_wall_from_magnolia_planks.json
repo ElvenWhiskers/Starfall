@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "starfall:magnolia_planks"
+    },
+    "B": {
+      "item": "starfall:magnolia_slab"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "starfall:magnolia_wall"
+  },
+  "show_notification": true
+}

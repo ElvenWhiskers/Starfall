@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_larkspur_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "starfall:larkspur_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "starfall:larkspur_planks_from_larkspur_wood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_larkspur_wood",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "starfall:larkspur_planks_from_larkspur_wood"
+    ]
+  },
+  "sends_telemetry_event": false
+}

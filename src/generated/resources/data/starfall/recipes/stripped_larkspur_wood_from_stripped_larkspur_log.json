@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "starfall:stripped_larkspur_log"
+    }
+  },
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "item": "starfall:stripped_larkspur_wood"
+  },
+  "show_notification": true
+}

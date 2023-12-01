@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_opal_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "starfall:opal_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "starfall:opal_trapdoor_from_opal_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_opal_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "starfall:opal_trapdoor_from_opal_planks"
+    ]
+  },
+  "sends_telemetry_event": false
+}

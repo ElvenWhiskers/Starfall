@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "starfall:opal_planks"
+    },
+    "B": {
+      "item": "starfall:opal_slab"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "starfall:opal_wall"
+  },
+  "show_notification": true
+}

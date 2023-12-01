@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "starfall:block/larkspur_log",
+    "side": "starfall:block/larkspur_log"
+  }
+}

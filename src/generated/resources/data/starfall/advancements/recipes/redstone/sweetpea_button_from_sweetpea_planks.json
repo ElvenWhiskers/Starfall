@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sweetpea_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "starfall:sweetpea_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "starfall:sweetpea_button_from_sweetpea_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_sweetpea_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "starfall:sweetpea_button_from_sweetpea_planks"
+    ]
+  },
+  "sends_telemetry_event": false
+}

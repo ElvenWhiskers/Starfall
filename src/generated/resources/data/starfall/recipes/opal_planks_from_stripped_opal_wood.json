@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "starfall:stripped_opal_wood"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "starfall:opal_planks"
+  }
+}

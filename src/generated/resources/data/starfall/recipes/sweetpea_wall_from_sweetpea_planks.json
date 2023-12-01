@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "starfall:sweetpea_planks"
+    },
+    "B": {
+      "item": "starfall:sweetpea_slab"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "starfall:sweetpea_wall"
+  },
+  "show_notification": true
+}

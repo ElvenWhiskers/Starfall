@@ -1,0 +1,18 @@
+// 1.20.1	2023-12-01T12:31:50.6350034	Block Tags
+9592acf16cdc2dfed93544f473f7de412c06022b data/minecraft/tags/blocks/animals_spawnable_on.json
+9592acf16cdc2dfed93544f473f7de412c06022b data/minecraft/tags/blocks/azalea_grows_on.json
+9592acf16cdc2dfed93544f473f7de412c06022b data/minecraft/tags/blocks/bamboo_plantable_on.json
+9592acf16cdc2dfed93544f473f7de412c06022b data/minecraft/tags/blocks/dirt.json
+9a208a3f624972a7dc3e8ef78fb1b9dc3c314a59 data/minecraft/tags/blocks/fences.json
+5b212b89fa6aa2c12a116ac8d6c331703891e690 data/minecraft/tags/blocks/fence_gates.json
+acbffb06ce2dd2d31fcb988c525184f2123ead0f data/minecraft/tags/blocks/flowers.json
+9592acf16cdc2dfed93544f473f7de412c06022b data/minecraft/tags/blocks/foxes_spawnable_on.json
+c4f7b1e1ccda56ab4da536cd5b98c647395cca16 data/minecraft/tags/blocks/leaves.json
+359216028a7151b5ceb6627c18a5f4a80d5a5b53 data/minecraft/tags/blocks/logs_that_burn.json
+b45459a89fd8ef97ab2981f173cab5a37cf886db data/minecraft/tags/blocks/mineable/axe.json
+14eeec7bc19264489beee8bd41c5006866843d44 data/minecraft/tags/blocks/mineable/pickaxe.json
+d8dd105d01d750021a3c3fbc3912b1bf72f1b416 data/minecraft/tags/blocks/needs_iron_tool.json
+0fcd3c23f8a1e58d674be807bcab5a800e671df4 data/minecraft/tags/blocks/needs_stone_tool.json
+6d1127a7a9648a9eb16f2eb57aa435939dea05f6 data/minecraft/tags/blocks/planks.json
+9592acf16cdc2dfed93544f473f7de412c06022b data/minecraft/tags/blocks/valid_spawn.json
+62eee8e3481cca0b55b9b4d65c6efa4c63b5ebd9 data/minecraft/tags/blocks/walls.json

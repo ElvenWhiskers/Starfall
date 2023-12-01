@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "starfall:larkspur_planks"
+    }
+  ],
+  "result": {
+    "item": "starfall:larkspur_button"
+  }
+}

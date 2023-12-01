@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "starfall:block/callalily_slab"
+    },
+    "type=double": {
+      "model": "starfall:block/callalily_planks"
+    },
+    "type=top": {
+      "model": "starfall:block/callalily_slab_top"
+    }
+  }
+}

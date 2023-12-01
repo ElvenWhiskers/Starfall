@@ -1,0 +1,29 @@
+{
+  "values": [
+    "starfall:opal_log",
+    "starfall:opal_wood",
+    "starfall:opal_planks",
+    "starfall:stripped_opal_log",
+    "starfall:stripped_opal_wood",
+    "starfall:magnolia_log",
+    "starfall:magnolia_wood",
+    "starfall:magnolia_planks",
+    "starfall:stripped_magnolia_log",
+    "starfall:stripped_magnolia_wood",
+    "starfall:larkspur_log",
+    "starfall:larkspur_wood",
+    "starfall:larkspur_planks",
+    "starfall:stripped_larkspur_log",
+    "starfall:stripped_larkspur_wood",
+    "starfall:callalily_log",
+    "starfall:callalily_wood",
+    "starfall:callalily_planks",
+    "starfall:stripped_callalily_log",
+    "starfall:stripped_callalily_wood",
+    "starfall:sweetpea_log",
+    "starfall:sweetpea_wood",
+    "starfall:sweetpea_planks",
+    "starfall:stripped_sweetpea_log",
+    "starfall:stripped_sweetpea_wood"
+  ]
+}
