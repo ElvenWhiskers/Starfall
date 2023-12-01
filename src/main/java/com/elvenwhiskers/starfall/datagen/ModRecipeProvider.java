@@ -4,6 +4,7 @@ import com.elvenwhiskers.starfall.Starfall;
 import com.elvenwhiskers.starfall.block.ModBlocks;
 import com.elvenwhiskers.starfall.item.ModItems;
 import net.minecraft.advancements.critereon.ItemPredicate;
+import net.minecraft.client.resources.model.Material;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
@@ -11,7 +12,9 @@ import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import org.stringtemplate.v4.misc.Misc;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -56,9 +59,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(ModBlocks.BRIGHTSTONE.get()).build()))
                 .save(pWriter);
 
+        //Adds all log varients, sticks, planks from logs, stripped, but not shapes.
         treeParts(pWriter, RecipeCategory.MISC, ModBlocks.OPAL_LOG.get(), ModBlocks.OPAL_WOOD.get(), ModBlocks.OPAL_PLANKS.get(), ModBlocks.STRIPPED_OPAL_LOG.get(), ModBlocks.STRIPPED_OPAL_WOOD.get());
         treeParts(pWriter, RecipeCategory.MISC, ModBlocks.MAGNOLIA_LOG.get(), ModBlocks.MAGNOLIA_WOOD.get(), ModBlocks.MAGNOLIA_PLANKS.get(), ModBlocks.STRIPPED_MAGNOLIA_LOG.get(), ModBlocks.STRIPPED_MAGNOLIA_WOOD.get());
+        treeParts(pWriter, RecipeCategory.MISC, ModBlocks.LARKSPUR_LOG.get(), ModBlocks.LARKSPUR_WOOD.get(), ModBlocks.LARKSPUR_PLANKS.get(), ModBlocks.STRIPPED_LARKSPUR_LOG.get(), ModBlocks.STRIPPED_LARKSPUR_WOOD.get());
+        treeParts(pWriter, RecipeCategory.MISC, ModBlocks.CALLALILY_LOG.get(), ModBlocks.CALLALILY_WOOD.get(), ModBlocks.CALLALILY_PLANKS.get(), ModBlocks.STRIPPED_CALLALILY_LOG.get(), ModBlocks.STRIPPED_CALLALILY_WOOD.get());
+        treeParts(pWriter, RecipeCategory.MISC, ModBlocks.SWEETPEA_LOG.get(), ModBlocks.SWEETPEA_WOOD.get(), ModBlocks.SWEETPEA_PLANKS.get(), ModBlocks.STRIPPED_SWEETPEA_LOG.get(), ModBlocks.STRIPPED_SWEETPEA_WOOD.get());
 
+        //Next add SHAPES, UGH
+        plankShapeParts(pWriter, ModBlocks.OPAL_PLANKS.get(), ModBlocks.OPAL_BUTTON.get(), ModBlocks.OPAL_DOOR.get(), ModBlocks.OPAL_FENCE.get(), ModBlocks.OPAL_FENCE_GATE.get(), ModBlocks.OPAL_PRESSURE_PLATE.get(),
+                ModBlocks.OPAL_SLAB.get(), ModBlocks.OPAL_STAIRS.get(), ModBlocks.OPAL_TRAPDOOR.get(), ModBlocks.OPAL_WALL.get());
 
     }
 
@@ -131,6 +141,41 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_" + getItemName(pSTWood), inventoryTrigger(ItemPredicate.Builder.item().
                         of(pSTWood).build()))
                 .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pSTWood) + "_from_" + getItemName(pSTLog));
+    }
+
+    protected static void plankShapeParts(Consumer<FinishedRecipe> pFinishedRecipe, ItemLike pPlanks, ItemLike pButton, ItemLike pDoor, ItemLike pFence, ItemLike pFenceGate, ItemLike pPressurePlate, ItemLike pSlab, ItemLike pStairs, ItemLike pTrap, ItemLike pWall){
+        buttonBuilder(pButton, Ingredient.of(pPlanks))
+                        .unlockedBy("has_" + getItemName(pPlanks), inventoryTrigger(ItemPredicate.Builder.item().of(pPlanks).build()))
+                        .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pButton) + "_from_" + getItemName(pPlanks));
+        doorBuilder(pDoor, Ingredient.of(pPlanks))
+                .unlockedBy("has_" + getItemName(pPlanks), inventoryTrigger(ItemPredicate.Builder.item().of(pPlanks).build()))
+                .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pDoor) + "_from_" + getItemName(pPlanks));
+        fenceBuilder(pFence, Ingredient.of(pPlanks))
+                .unlockedBy("has_" + getItemName(pPlanks), inventoryTrigger(ItemPredicate.Builder.item().of(pPlanks).build()))
+                .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pFence) + "_from_" + getItemName(pPlanks));
+        fenceGateBuilder(pFenceGate, Ingredient.of(pPlanks))
+                .unlockedBy("has_" + getItemName(pPlanks), inventoryTrigger(ItemPredicate.Builder.item().of(pPlanks).build()))
+                .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pFenceGate) + "_from_" + getItemName(pPlanks));
+        pressurePlate(pFinishedRecipe, pPressurePlate, pPlanks);
+        slabBuilder(RecipeCategory.MISC , pSlab, Ingredient.of(pPlanks))
+                .unlockedBy("has_" + getItemName(pPlanks), inventoryTrigger(ItemPredicate.Builder.item().of(pPlanks).build()))
+                .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pSlab) + "_from_" + getItemName(pPlanks));
+        stairBuilder(pStairs, Ingredient.of(pPlanks))
+                .unlockedBy("has_" + getItemName(pPlanks), inventoryTrigger(ItemPredicate.Builder.item().of(pPlanks).build()))
+                .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pStairs) + "_from_" + getItemName(pPlanks));
+        trapdoorBuilder(pTrap, Ingredient.of(pPlanks))
+                .unlockedBy("has_" + getItemName(pPlanks), inventoryTrigger(ItemPredicate.Builder.item().of(pPlanks).build()))
+                .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pTrap) + "_from_" + getItemName(pPlanks));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, pWall, 6)
+                .pattern("ABA")
+                .pattern("ABA")
+                .define('A', pPlanks)
+                .define('B', pSlab)
+                .unlockedBy("has_" + getItemName(pPlanks), inventoryTrigger(ItemPredicate.Builder.item().
+                        of(pPlanks).build()))
+                .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pWall) + "_from_" + getItemName(pPlanks));
 
     }
+
 }
