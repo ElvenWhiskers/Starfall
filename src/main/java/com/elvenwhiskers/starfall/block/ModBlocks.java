@@ -51,6 +51,9 @@ public class ModBlocks  {
     public static final RegistryObject<Block> COBBLED_BRIGHTSTONE = registerBlock("cobbled_brightstone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)
                     .strength(5f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MOSSY_COBBLED_BRIGHTSTONE = registerBlock("mossy_cobbled_brightstone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> SIOUX_QUARTZITE = registerBlock("sioux_quartzite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
@@ -168,6 +171,26 @@ public class ModBlocks  {
             () -> new ModFlammablePlanks(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> MAGNOLIA_SAPLING = registerBlock("magnolia_sapling",
             () -> new SaplingBlock(new MagnoliaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> MAGNOLIA_STAIRS = registerBlock("magnolia_stairs",
+            () -> new StairBlock(() -> ModBlocks.MAGNOLIA_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> MAGNOLIA_SLAB = registerBlock("magnolia_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> MAGNOLIA_PRESSURE_PLATE = registerBlock("magnolia_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).sound(SoundType.WOOD), BlockSetType.OAK));
+    public static final RegistryObject<Block> MAGNOLIA_BUTTON = registerBlock("magnolia_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD), BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> MAGNOLIA_FENCE = registerBlock("magnolia_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+    public static final RegistryObject<Block> MAGNOLIA_FENCE_GATE = registerBlock("magnolia_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    public static final RegistryObject<Block> MAGNOLIA_WALL = registerBlock("magnolia_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE_WALL)));
+    public static final RegistryObject<Block> MAGNOLIA_DOOR = registerBlock("magnolia_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK));
+    public static final RegistryObject<Block> MAGNOLIA_TRAPDOOR = registerBlock("magnolia_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK));
 
     public static final RegistryObject<Block> LARKSPUR_LOG = registerBlock("larkspur_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
@@ -181,6 +204,90 @@ public class ModBlocks  {
             () -> new ModFlammablePlanks(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> LARKSPUR_SAPLING = registerBlock("larkspur_sapling",
             () -> new SaplingBlock(new MagnoliaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> LARKSPUR_STAIRS = registerBlock("larkspur_stairs",
+            () -> new StairBlock(() -> ModBlocks.LARKSPUR_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> LARKSPUR_SLAB = registerBlock("larkspur_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> LARKSPUR_PRESSURE_PLATE = registerBlock("larkspur_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).sound(SoundType.WOOD), BlockSetType.OAK));
+    public static final RegistryObject<Block> LARKSPUR_BUTTON = registerBlock("larkspur_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD), BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> LARKSPUR_FENCE = registerBlock("larkspur_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+    public static final RegistryObject<Block> LARKSPUR_FENCE_GATE = registerBlock("larkspur_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    public static final RegistryObject<Block> LARKSPUR_WALL = registerBlock("larkspur_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE_WALL)));
+    public static final RegistryObject<Block> LARKSPUR_DOOR = registerBlock("larkspur_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK));
+    public static final RegistryObject<Block> LARKSPUR_TRAPDOOR = registerBlock("larkspur_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK));
+
+
+    public static final RegistryObject<Block> CALLALILY_LOG = registerBlock("callalily_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> CALLALILY_WOOD = registerBlock("callalily_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+    public static final RegistryObject<Block> STRIPPED_CALLALILY_LOG = registerBlock("stripped_callalily_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<Block> STRIPPED_CALLALILY_WOOD = registerBlock("stripped_callalily_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final RegistryObject<Block> CALLALILY_PLANKS = registerBlock("callalily_planks",
+            () -> new ModFlammablePlanks(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> CALLALILY_STAIRS = registerBlock("callalily_stairs",
+            () -> new StairBlock(() -> ModBlocks.CALLALILY_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> CALLALILY_SLAB = registerBlock("callalily_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> CALLALILY_PRESSURE_PLATE = registerBlock("callalily_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).sound(SoundType.WOOD), BlockSetType.OAK));
+    public static final RegistryObject<Block> CALLALILY_BUTTON = registerBlock("callalily_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD), BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> CALLALILY_FENCE = registerBlock("callalily_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+    public static final RegistryObject<Block> CALLALILY_FENCE_GATE = registerBlock("callalily_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    public static final RegistryObject<Block> CALLALILY_WALL = registerBlock("callalily_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE_WALL)));
+    public static final RegistryObject<Block> CALLALILY_DOOR = registerBlock("callalily_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK));
+    public static final RegistryObject<Block> CALLALILY_TRAPDOOR = registerBlock("callalily_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK));
+
+
+    public static final RegistryObject<Block> SWEETPEA_LOG = registerBlock("sweetpea_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> SWEETPEA_WOOD = registerBlock("sweetpea_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+    public static final RegistryObject<Block> STRIPPED_SWEETPEA_LOG = registerBlock("stripped_sweetpea_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<Block> STRIPPED_SWEETPEA_WOOD = registerBlock("stripped_sweetpea_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final RegistryObject<Block> SWEETPEA_PLANKS = registerBlock("sweetpea_planks",
+            () -> new ModFlammablePlanks(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> SWEETPEA_STAIRS = registerBlock("sweetpea_stairs",
+            () -> new StairBlock(() -> ModBlocks.SWEETPEA_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> SWEETPEA_SLAB = registerBlock("sweetpea_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> SWEETPEA_PRESSURE_PLATE = registerBlock("sweetpea_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).sound(SoundType.WOOD), BlockSetType.OAK));
+    public static final RegistryObject<Block> SWEETPEA_BUTTON = registerBlock("sweetpea_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD), BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> SWEETPEA_FENCE = registerBlock("sweetpea_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+    public static final RegistryObject<Block> SWEETPEA_FENCE_GATE = registerBlock("sweetpea_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    public static final RegistryObject<Block> SWEETPEA_WALL = registerBlock("sweetpea_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE_WALL)));
+    public static final RegistryObject<Block> SWEETPEA_DOOR = registerBlock("sweetpea_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK));
+    public static final RegistryObject<Block> SWEETPEA_TRAPDOOR = registerBlock("sweetpea_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK));
 
 
 

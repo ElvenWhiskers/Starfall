@@ -33,12 +33,22 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.LARKSPUR_LOG.get().asItem())
                 .add(ModBlocks.LARKSPUR_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_LARKSPUR_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_LARKSPUR_WOOD.get().asItem());
+                .add(ModBlocks.STRIPPED_LARKSPUR_WOOD.get().asItem())
+                .add(ModBlocks.CALLALILY_LOG.get().asItem())
+                .add(ModBlocks.CALLALILY_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_CALLALILY_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_CALLALILY_WOOD.get().asItem())
+                .add(ModBlocks.SWEETPEA_LOG.get().asItem())
+                .add(ModBlocks.SWEETPEA_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_SWEETPEA_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_SWEETPEA_WOOD.get().asItem());
 
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.OPAL_PLANKS.get().asItem())
                 .add(ModBlocks.MAGNOLIA_PLANKS.get().asItem())
-                .add(ModBlocks.LARKSPUR_PLANKS.get().asItem());
+                .add(ModBlocks.LARKSPUR_PLANKS.get().asItem())
+                .add(ModBlocks.CALLALILY_PLANKS.get().asItem())
+                .add(ModBlocks.SWEETPEA_PLANKS.get().asItem());
 
     }
 

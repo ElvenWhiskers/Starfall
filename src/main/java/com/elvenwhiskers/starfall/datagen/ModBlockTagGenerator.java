@@ -29,6 +29,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.BRIGHTSTONE_BRICKS.get(),
                         ModBlocks.CHISELED_BRIGHTSTONE.get(),
                         ModBlocks.COBBLED_BRIGHTSTONE.get(),
+                        ModBlocks.MOSSY_COBBLED_BRIGHTSTONE.get(),
                         ModBlocks.SIOUX_QUARTZITE.get(),
                         ModBlocks.CATLINITE.get(),
                         ModBlocks.LIGHT_BLUE_CATLINITE.get(),
@@ -55,7 +56,17 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.LARKSPUR_WOOD.get(),
                         ModBlocks.LARKSPUR_PLANKS.get(),
                         ModBlocks.STRIPPED_LARKSPUR_LOG.get(),
-                        ModBlocks.STRIPPED_LARKSPUR_WOOD.get());
+                        ModBlocks.STRIPPED_LARKSPUR_WOOD.get(),
+                        ModBlocks.CALLALILY_LOG.get(),
+                        ModBlocks.CALLALILY_WOOD.get(),
+                        ModBlocks.CALLALILY_PLANKS.get(),
+                        ModBlocks.STRIPPED_CALLALILY_LOG.get(),
+                        ModBlocks.STRIPPED_CALLALILY_WOOD.get(),
+                        ModBlocks.SWEETPEA_LOG.get(),
+                        ModBlocks.SWEETPEA_WOOD.get(),
+                        ModBlocks.SWEETPEA_PLANKS.get(),
+                        ModBlocks.STRIPPED_SWEETPEA_LOG.get(),
+                        ModBlocks.STRIPPED_SWEETPEA_WOOD.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.AEGIS_BLOCK.get(),
@@ -67,6 +78,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.BRIGHTSTONE_BRICKS.get(),
                         ModBlocks.CHISELED_BRIGHTSTONE.get(),
                         ModBlocks.COBBLED_BRIGHTSTONE.get(),
+                        ModBlocks.MOSSY_COBBLED_BRIGHTSTONE.get(),
                         ModBlocks.SIOUX_QUARTZITE.get(),
                         ModBlocks.CATLINITE.get(),
                         ModBlocks.LIGHT_BLUE_CATLINITE.get(),
@@ -90,12 +102,24 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.LARKSPUR_LOG.get(),
                         ModBlocks.LARKSPUR_WOOD.get(),
                         ModBlocks.STRIPPED_LARKSPUR_LOG.get(),
-                        ModBlocks.STRIPPED_LARKSPUR_WOOD.get());
+                        ModBlocks.STRIPPED_LARKSPUR_WOOD.get(),
+                        ModBlocks.CALLALILY_LOG.get(),
+                        ModBlocks.CALLALILY_WOOD.get(),
+                        ModBlocks.CALLALILY_PLANKS.get(),
+                        ModBlocks.STRIPPED_CALLALILY_LOG.get(),
+                        ModBlocks.STRIPPED_CALLALILY_WOOD.get(),
+                        ModBlocks.SWEETPEA_LOG.get(),
+                        ModBlocks.SWEETPEA_WOOD.get(),
+                        ModBlocks.SWEETPEA_PLANKS.get(),
+                        ModBlocks.STRIPPED_SWEETPEA_LOG.get(),
+                        ModBlocks.STRIPPED_SWEETPEA_WOOD.get());
 
         this.tag(BlockTags.PLANKS)
                 .add(ModBlocks.OPAL_PLANKS.get(),
                         ModBlocks.MAGNOLIA_PLANKS.get(),
-                        ModBlocks.LARKSPUR_PLANKS.get());
+                        ModBlocks.LARKSPUR_PLANKS.get(),
+                        ModBlocks.CALLALILY_PLANKS.get(),
+                        ModBlocks.SWEETPEA_PLANKS.get());
 
         this.tag(BlockTags.FLOWERS)
                 .add(ModBlocks.PUFFBALL_BLUE.get(),
@@ -132,13 +156,25 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.STARCROSSED_GRASS_BLOCK.get());
 
         this.tag(BlockTags.FENCES)
-                .add(ModBlocks.OPAL_FENCE.get());
+                .add(ModBlocks.OPAL_FENCE.get(),
+                        ModBlocks.MAGNOLIA_FENCE.get(),
+                        ModBlocks.LARKSPUR_FENCE.get(),
+                        ModBlocks.CALLALILY_FENCE.get(),
+                        ModBlocks.SWEETPEA_FENCE.get());
 
         this.tag(BlockTags.WALLS)
-                .add(ModBlocks.OPAL_WALL.get());
+                .add(ModBlocks.OPAL_WALL.get(),
+                        ModBlocks.MAGNOLIA_WALL.get(),
+                        ModBlocks.LARKSPUR_WALL.get(),
+                        ModBlocks.CALLALILY_WALL.get(),
+                        ModBlocks.SWEETPEA_WALL.get());
 
         this.tag(BlockTags.FENCE_GATES)
-                .add(ModBlocks.OPAL_FENCE_GATE.get());
+                .add(ModBlocks.OPAL_FENCE_GATE.get(),
+                        ModBlocks.MAGNOLIA_FENCE_GATE.get(),
+                        ModBlocks.LARKSPUR_FENCE_GATE.get(),
+                        ModBlocks.CALLALILY_FENCE_GATE.get(),
+                        ModBlocks.SWEETPEA_FENCE_GATE.get());
 
 
     }

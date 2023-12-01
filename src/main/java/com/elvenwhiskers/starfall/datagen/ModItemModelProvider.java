@@ -35,6 +35,22 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.OPAL_FENCE, ModBlocks.OPAL_PLANKS);
         wallItem(ModBlocks.OPAL_WALL, ModBlocks.OPAL_PLANKS);
         simpleBlockItem(ModBlocks.OPAL_DOOR);
+        buttonItem(ModBlocks.MAGNOLIA_BUTTON, ModBlocks.MAGNOLIA_PLANKS);
+        fenceItem(ModBlocks.MAGNOLIA_FENCE, ModBlocks.MAGNOLIA_PLANKS);
+        wallItem(ModBlocks.MAGNOLIA_WALL, ModBlocks.MAGNOLIA_PLANKS);
+        simpleBlockItem(ModBlocks.MAGNOLIA_DOOR);
+        buttonItem(ModBlocks.LARKSPUR_BUTTON, ModBlocks.LARKSPUR_PLANKS);
+        fenceItem(ModBlocks.LARKSPUR_FENCE, ModBlocks.LARKSPUR_PLANKS);
+        wallItem(ModBlocks.LARKSPUR_WALL, ModBlocks.LARKSPUR_PLANKS);
+        simpleBlockItem(ModBlocks.LARKSPUR_DOOR);
+        buttonItem(ModBlocks.CALLALILY_BUTTON, ModBlocks.CALLALILY_PLANKS);
+        fenceItem(ModBlocks.CALLALILY_FENCE, ModBlocks.CALLALILY_PLANKS);
+        wallItem(ModBlocks.CALLALILY_WALL, ModBlocks.CALLALILY_PLANKS);
+        simpleBlockItem(ModBlocks.CALLALILY_DOOR);
+        buttonItem(ModBlocks.SWEETPEA_BUTTON, ModBlocks.SWEETPEA_PLANKS);
+        fenceItem(ModBlocks.SWEETPEA_FENCE, ModBlocks.SWEETPEA_PLANKS);
+        wallItem(ModBlocks.SWEETPEA_WALL, ModBlocks.SWEETPEA_PLANKS);
+        simpleBlockItem(ModBlocks.SWEETPEA_DOOR);
 
     }
 

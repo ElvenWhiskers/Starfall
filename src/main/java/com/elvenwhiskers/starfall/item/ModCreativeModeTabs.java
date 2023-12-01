@@ -29,6 +29,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BRIGHTSTONE_BRICKS.get());
                         output.accept(ModBlocks.CHISELED_BRIGHTSTONE.get());
                         output.accept(ModBlocks.COBBLED_BRIGHTSTONE.get());
+                        output.accept(ModBlocks.MOSSY_COBBLED_BRIGHTSTONE.get());
 
                         output.accept(ModBlocks.SIOUX_QUARTZITE.get());
 
@@ -77,6 +78,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MAGNOLIA_PLANKS.get());
                         output.accept(ModBlocks.MAGNOLIA_SAPLING.get());
                         output.accept(ModBlocks.FANTASY_LEAVES.get());
+                        output.accept(ModBlocks.MAGNOLIA_STAIRS.get());
+                        output.accept(ModBlocks.MAGNOLIA_SLAB.get());
+                        output.accept(ModBlocks.MAGNOLIA_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.MAGNOLIA_BUTTON.get());
+                        output.accept(ModBlocks.MAGNOLIA_FENCE.get());
+                        output.accept(ModBlocks.MAGNOLIA_FENCE_GATE.get());
+                        output.accept(ModBlocks.MAGNOLIA_WALL.get());
+                        output.accept(ModBlocks.MAGNOLIA_DOOR.get());
+                        output.accept(ModBlocks.MAGNOLIA_TRAPDOOR.get());
 
                         output.accept(ModBlocks.LARKSPUR_LOG.get());
                         output.accept(ModBlocks.LARKSPUR_WOOD.get());
@@ -84,6 +94,46 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.STRIPPED_LARKSPUR_WOOD.get());
                         output.accept(ModBlocks.LARKSPUR_PLANKS.get());
                         output.accept(ModBlocks.LARKSPUR_SAPLING.get());
+                        output.accept(ModBlocks.LARKSPUR_STAIRS.get());
+                        output.accept(ModBlocks.LARKSPUR_SLAB.get());
+                        output.accept(ModBlocks.LARKSPUR_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.LARKSPUR_BUTTON.get());
+                        output.accept(ModBlocks.LARKSPUR_FENCE.get());
+                        output.accept(ModBlocks.LARKSPUR_FENCE_GATE.get());
+                        output.accept(ModBlocks.LARKSPUR_WALL.get());
+                        output.accept(ModBlocks.LARKSPUR_DOOR.get());
+                        output.accept(ModBlocks.LARKSPUR_TRAPDOOR.get());
+
+                        output.accept(ModBlocks.CALLALILY_LOG.get());
+                        output.accept(ModBlocks.CALLALILY_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_CALLALILY_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_CALLALILY_WOOD.get());
+                        output.accept(ModBlocks.CALLALILY_PLANKS.get());
+                        output.accept(ModBlocks.CALLALILY_STAIRS.get());
+                        output.accept(ModBlocks.CALLALILY_SLAB.get());
+                        output.accept(ModBlocks.CALLALILY_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.CALLALILY_BUTTON.get());
+                        output.accept(ModBlocks.CALLALILY_FENCE.get());
+                        output.accept(ModBlocks.CALLALILY_FENCE_GATE.get());
+                        output.accept(ModBlocks.CALLALILY_WALL.get());
+                        output.accept(ModBlocks.CALLALILY_DOOR.get());
+                        output.accept(ModBlocks.CALLALILY_TRAPDOOR.get());
+
+                        output.accept(ModBlocks.SWEETPEA_LOG.get());
+                        output.accept(ModBlocks.SWEETPEA_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_SWEETPEA_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_SWEETPEA_WOOD.get());
+                        output.accept(ModBlocks.SWEETPEA_PLANKS.get());
+                        output.accept(ModBlocks.SWEETPEA_STAIRS.get());
+                        output.accept(ModBlocks.SWEETPEA_SLAB.get());
+                        output.accept(ModBlocks.SWEETPEA_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.SWEETPEA_BUTTON.get());
+                        output.accept(ModBlocks.SWEETPEA_FENCE.get());
+                        output.accept(ModBlocks.SWEETPEA_FENCE_GATE.get());
+                        output.accept(ModBlocks.SWEETPEA_WALL.get());
+                        output.accept(ModBlocks.SWEETPEA_DOOR.get());
+                        output.accept(ModBlocks.SWEETPEA_TRAPDOOR.get());
+
 
                     }).build());
 
