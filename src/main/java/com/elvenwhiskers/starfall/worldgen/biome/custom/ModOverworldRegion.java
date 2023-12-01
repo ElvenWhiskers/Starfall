@@ -25,6 +25,7 @@ public class ModOverworldRegion extends Region {
         this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
             modifiedVanillaOverworldBuilder.replaceBiome(Biomes.SUNFLOWER_PLAINS, ModBiomes.FLOWER_MEADOW);
             modifiedVanillaOverworldBuilder.replaceBiome(Biomes.MEADOW, ModBiomes.CRYSTAL_FOREST);
+            modifiedVanillaOverworldBuilder.replaceBiome(Biomes.PLAINS, ModBiomes.LOST_PLAINS);
 
         });
     }

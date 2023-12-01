@@ -30,8 +30,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CHISELED_BRIGHTSTONE.get());
                         output.accept(ModBlocks.COBBLED_BRIGHTSTONE.get());
 
+                        output.accept(ModBlocks.SIOUX_QUARTZITE.get());
+
+                        output.accept(ModBlocks.CATLINEITE.get());
+
                         output.accept(ModBlocks.PUFFBALL_BLUE.get());
                         output.accept(ModBlocks.PUFFBALL_PINK.get());
+                        output.accept(ModBlocks.PUFFBALL_ORANGE.get());
 
                         output.accept(ModBlocks.OPAL_LOG.get());
                         output.accept(ModBlocks.OPAL_WOOD.get());
@@ -52,6 +57,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MAGNOLIA_PLANKS.get());
                         output.accept(ModBlocks.MAGNOLIA_SAPLING.get());
                         output.accept(ModBlocks.FANTASY_LEAVES.get());
+
+                        output.accept(ModBlocks.LARKSPUR_LOG.get());
+                        output.accept(ModBlocks.LARKSPUR_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_LARKSPUR_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_LARKSPUR_WOOD.get());
+                        output.accept(ModBlocks.LARKSPUR_PLANKS.get());
+                        output.accept(ModBlocks.LARKSPUR_SAPLING.get());
 
                     }).build());
 

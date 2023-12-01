@@ -9,8 +9,11 @@
   "block.starfall.brightstone_bricks": "Brightstone Bricks",
   "block.starfall.chiseled_brightstone": "Chiseled Brightstone",
   "block.starfall.cobbled_brightstone": "Cobbled Brightstone",
+  "block.starfall.sioux_quartzite": "Sioux Quartz",
+  "block.starfall.catlinite": "Catlinite",
   "block.starfall.puffball_blue": "Blue Puffball",
   "block.starfall.puffball_pink": "Pink Puffball",
+  "block.starfall.puffball_orange": "Orange Puffball",
   "block.starfall.opal_log": "Opal Log",
   "block.starfall.opal_wood": "Opal Wood",
   "block.starfall.stripped_opal_log": "Stripped Opal Log",
@@ -28,6 +31,12 @@
   "block.starfall.magnolia_planks": "Magnolia planks",
   "block.starfall.magnolia_sapling": "Magnolia Sapling",
   "block.starfall.fantasy_leaves": "Fantasy Leaves",
+  "block.starfall.larkspur_log": "Larkspur Log",
+  "block.starfall.larkspur_wood": "Larkspur Wood",
+  "block.starfall.stripped_larkspur_log": "Stripped Larkspur Log",
+  "block.starfall.stripped_larkspur_wood": "Stripped Larkspur Wood",
+  "block.starfall.larkspur_planks": "Larkspur planks",
+  "block.starfall.larkspur_sapling": "Larkspur Sapling",
 
 
 

@@ -29,6 +29,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CHISELED_BRIGHTSTONE.get());
         this.dropSelf(ModBlocks.STARCROSSED_DIRT.get());
 
+        this.dropSelf(ModBlocks.SIOUX_QUARTZITE.get());
+
+        this.dropSelf(ModBlocks.CATLINEITE.get());
+
         this.add(ModBlocks.AEGIS_ORE.get(),
                 block -> createOreDrop(ModBlocks.AEGIS_ORE.get(), ModItems.RAW_AEGIS.get()));
 
@@ -39,6 +43,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.PUFFBALL_PINK.get());
         this.add(ModBlocks.POTTED_PUFFBALL_PINK.get(),
                 createPotFlowerItemTable(ModBlocks.POTTED_PUFFBALL_PINK.get()));
+
+        this.dropSelf(ModBlocks.PUFFBALL_ORANGE.get());
+        this.add(ModBlocks.POTTED_PUFFBALL_ORANGE.get(),
+                createPotFlowerItemTable(ModBlocks.POTTED_PUFFBALL_ORANGE.get()));
 
         this.dropSelf(ModBlocks.OPAL_LOG.get());
         this.dropSelf(ModBlocks.OPAL_WOOD.get());
@@ -53,6 +61,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_MAGNOLIA_WOOD.get());
         this.dropSelf(ModBlocks.MAGNOLIA_PLANKS.get());
         this.dropSelf(ModBlocks.MAGNOLIA_SAPLING.get());
+
+        this.dropSelf(ModBlocks.LARKSPUR_LOG.get());
+        this.dropSelf(ModBlocks.LARKSPUR_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_LARKSPUR_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_LARKSPUR_WOOD.get());
+        this.dropSelf(ModBlocks.LARKSPUR_PLANKS.get());
+        this.dropSelf(ModBlocks.LARKSPUR_SAPLING.get());
 
         this.add(ModBlocks.OPAL_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.OPAL_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));

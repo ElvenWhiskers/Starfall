@@ -7,6 +7,10 @@
     "starfall:magnolia_log",
     "starfall:magnolia_wood",
     "starfall:stripped_magnolia_log",
-    "starfall:stripped_magnolia_wood"
+    "starfall:stripped_magnolia_wood",
+    "starfall:larkspur_log",
+    "starfall:larkspur_wood",
+    "starfall:stripped_larkspur_log",
+    "starfall:stripped_larkspur_wood"
   ]
 }

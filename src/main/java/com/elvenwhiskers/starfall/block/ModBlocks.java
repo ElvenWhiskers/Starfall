@@ -50,15 +50,28 @@ public class ModBlocks  {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)
                     .strength(5f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> SIOUX_QUARTZITE = registerBlock("sioux_quartzite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CATLINEITE = registerBlock("catlinite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+
+
     public static final RegistryObject<Block> PUFFBALL_BLUE = registerBlock("puffball_blue",
             () -> new FlowerBlock(() -> MobEffects.LUCK, 6, BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
     public static final RegistryObject<Block> PUFFBALL_PINK = registerBlock("puffball_pink",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 6, BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
+    public static final RegistryObject<Block> PUFFBALL_ORANGE = registerBlock("puffball_orange",
             () -> new FlowerBlock(() -> MobEffects.LUCK, 6, BlockBehaviour.Properties.copy(Blocks.ALLIUM)));
 
     public static final RegistryObject<Block> POTTED_PUFFBALL_BLUE = BLOCKS.register("potted_puffball_blue",
             () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), PUFFBALL_BLUE, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
     public static final RegistryObject<Block> POTTED_PUFFBALL_PINK = BLOCKS.register("potted_puffball_pink",
             () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), PUFFBALL_PINK, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
+    public static final RegistryObject<Block> POTTED_PUFFBALL_ORANGE = BLOCKS.register("potted_puffball_orange",
+            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), PUFFBALL_ORANGE, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM)));
 
     public static final RegistryObject<Block> OPAL_LOG = registerBlock("opal_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
@@ -100,8 +113,20 @@ public class ModBlocks  {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
     public static final RegistryObject<Block> MAGNOLIA_PLANKS = registerBlock("magnolia_planks",
             () -> new ModFlammablePlanks(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
-
     public static final RegistryObject<Block> MAGNOLIA_SAPLING = registerBlock("magnolia_sapling",
+            () -> new SaplingBlock(new MagnoliaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+    public static final RegistryObject<Block> LARKSPUR_LOG = registerBlock("larkspur_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> LARKSPUR_WOOD = registerBlock("larkspur_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+    public static final RegistryObject<Block> STRIPPED_LARKSPUR_LOG = registerBlock("stripped_larkspur_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<Block> STRIPPED_LARKSPUR_WOOD = registerBlock("stripped_larkspur_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final RegistryObject<Block> LARKSPUR_PLANKS = registerBlock("larkspur_planks",
+            () -> new ModFlammablePlanks(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> LARKSPUR_SAPLING = registerBlock("larkspur_sapling",
             () -> new SaplingBlock(new MagnoliaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
 

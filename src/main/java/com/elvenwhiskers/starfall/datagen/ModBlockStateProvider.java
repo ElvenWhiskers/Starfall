@@ -27,6 +27,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.CHISELED_BRIGHTSTONE);
         blockWithItem(ModBlocks.COBBLED_BRIGHTSTONE);
 
+        blockWithItem(ModBlocks.SIOUX_QUARTZITE);
+
+        blockWithItem(ModBlocks.CATLINEITE);
+
         blockWithItem(ModBlocks.STARFALL_PORTAL);
 
         //simpleBlock(ModBlocks.PUFFBALL_BLUE.get(),
@@ -47,6 +51,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_MAGNOLIA_WOOD.get(), new ResourceLocation(Starfall.MODID, "block/stripped_magnolia_log"),
                 new ResourceLocation(Starfall.MODID, "block/stripped_magnolia_log"));
 
+        logBlock(((RotatedPillarBlock) ModBlocks.LARKSPUR_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.LARKSPUR_WOOD.get()), blockTexture(ModBlocks.LARKSPUR_LOG.get()), blockTexture(ModBlocks.LARKSPUR_LOG.get()));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_LARKSPUR_LOG.get(), new ResourceLocation(Starfall.MODID, "block/stripped_larkspur_log"),
+                new ResourceLocation(Starfall.MODID, "block/stripped_larkspur_log_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_LARKSPUR_WOOD.get(), new ResourceLocation(Starfall.MODID, "block/stripped_larkspur_log"),
+                new ResourceLocation(Starfall.MODID, "block/stripped_larkspur_log"));
+
         blockItem(ModBlocks.OPAL_LOG);
         blockItem(ModBlocks.OPAL_WOOD);
         blockItem(ModBlocks.STRIPPED_OPAL_LOG);
@@ -66,6 +77,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.MAGNOLIA_PLANKS);
         saplingBlock(ModBlocks.MAGNOLIA_SAPLING);
+
+        blockItem(ModBlocks.LARKSPUR_LOG);
+        blockItem(ModBlocks.LARKSPUR_WOOD);
+        blockItem(ModBlocks.STRIPPED_LARKSPUR_LOG);
+        blockItem(ModBlocks.STRIPPED_LARKSPUR_WOOD);
+        blockWithItem(ModBlocks.LARKSPUR_PLANKS);
 
         //blockWithItem(ModBlocks.BRIGHTSTONE_FURNACE);
 

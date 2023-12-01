@@ -15,6 +15,9 @@ public class ModSurfaceRules {
     private static final SurfaceRules.RuleSource DIRT = makeStateRule(ModBlocks.STARCROSSED_DIRT.get());
     private static final SurfaceRules.RuleSource AIR = makeStateRule(Blocks.AIR);
     private static final SurfaceRules.RuleSource BEDROCK = makeStateRule(Blocks.BEDROCK);
+    private static final SurfaceRules.RuleSource VANILLA_GRASS_BLOCK = makeStateRule(Blocks.GRASS_BLOCK);
+    private static final SurfaceRules.RuleSource VANILLA_DIRT_BLOCK = makeStateRule(Blocks.DIRT);
+
 
     public static SurfaceRules.RuleSource makeBiomeRules() {
         SurfaceRules.ConditionSource isAtOrAboveWaterLevel = SurfaceRules.waterBlockCheck(-1, 0);

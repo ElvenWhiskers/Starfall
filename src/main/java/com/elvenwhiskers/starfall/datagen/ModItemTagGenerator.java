@@ -29,11 +29,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.MAGNOLIA_LOG.get().asItem())
                 .add(ModBlocks.MAGNOLIA_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_MAGNOLIA_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_MAGNOLIA_WOOD.get().asItem());
+                .add(ModBlocks.STRIPPED_MAGNOLIA_WOOD.get().asItem())
+                .add(ModBlocks.LARKSPUR_LOG.get().asItem())
+                .add(ModBlocks.LARKSPUR_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_LARKSPUR_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_LARKSPUR_WOOD.get().asItem());
 
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.OPAL_PLANKS.get().asItem())
-                .add(ModBlocks.MAGNOLIA_PLANKS.get().asItem());
+                .add(ModBlocks.MAGNOLIA_PLANKS.get().asItem())
+                .add(ModBlocks.LARKSPUR_PLANKS.get().asItem());
 
     }
 

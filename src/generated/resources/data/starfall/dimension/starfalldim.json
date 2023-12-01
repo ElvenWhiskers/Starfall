@@ -18,6 +18,18 @@
           }
         },
         {
+          "biome": "starfall:crystal_forest",
+          "parameters": {
+            "continentalness": 0.2,
+            "depth": 0.0,
+            "erosion": 0.1,
+            "humidity": 0.3,
+            "offset": 0.0,
+            "temperature": 0.4,
+            "weirdness": 0.0
+          }
+        },
+        {
           "biome": "minecraft:birch_forest",
           "parameters": {
             "continentalness": 0.0,
@@ -38,18 +50,6 @@
             "humidity": 0.6,
             "offset": 0.0,
             "temperature": 0.3,
-            "weirdness": 0.0
-          }
-        },
-        {
-          "biome": "minecraft:dark_forest",
-          "parameters": {
-            "continentalness": 0.2,
-            "depth": 0.0,
-            "erosion": 0.1,
-            "humidity": 0.3,
-            "offset": 0.0,
-            "temperature": 0.4,
             "weirdness": 0.0
           }
         }

@@ -18,10 +18,12 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 public class ModBiomes {
     public static final ResourceKey<Biome> FLOWER_MEADOW = register("flower_meadow");
     public static final ResourceKey<Biome> CRYSTAL_FOREST = register("crystal_forest");
+    public static final ResourceKey<Biome> LOST_PLAINS = register("lost_plains");
 
     public static void boostrap(BootstapContext<Biome> context) {
         context.register(FLOWER_MEADOW, flowerMeadow(context));
         context.register(CRYSTAL_FOREST, crystalForest(context));
+        context.register(LOST_PLAINS, lostPlains(context));
     }
 
     public static void globalOverworldGeneration(BiomeGenerationSettings.Builder builder) {
@@ -69,6 +71,51 @@ public class ModBiomes {
                         .grassColorOverride(0x90e582)
                         .foliageColorOverride(0xc5e582)
                         .fogColor(0xbcf9ff)
+                        .ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS)
+                        .backgroundMusic(Musics.createGameMusic(SoundEvents.MUSIC_GAME)).build())
+                .build();
+    }
+
+    public static Biome lostPlains(BootstapContext<Biome> context) {
+        MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
+
+        spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.RABBIT, 5, 4, 4));
+
+        BiomeDefaultFeatures.farmAnimals(spawnBuilder);
+        BiomeDefaultFeatures.commonSpawns(spawnBuilder);
+
+        BiomeGenerationSettings.Builder biomeBuilder =
+                new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
+
+        globalOverworldGeneration(biomeBuilder);
+        BiomeDefaultFeatures.addMossyStoneBlock(biomeBuilder);
+        BiomeDefaultFeatures.addSavannaGrass(biomeBuilder);
+        BiomeDefaultFeatures.addForestFlowers(biomeBuilder);
+        BiomeDefaultFeatures.addFerns(biomeBuilder);
+        BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
+        BiomeDefaultFeatures.addExtraGold(biomeBuilder);
+        //BiomeDefaultFeatures.addPlainGrass(biomeBuilder);
+
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.FLOWER_FLOWER_FOREST);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.TREES_BIRCH);
+
+        BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
+        BiomeDefaultFeatures.addDefaultExtraVegetation(biomeBuilder);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.MAGNOLIA_PLACED_KEY);
+
+        return new Biome.BiomeBuilder()
+                .hasPrecipitation(true)
+                .downfall(0.8f)
+                .temperature(0.7f)
+                .generationSettings(biomeBuilder.build())
+                .mobSpawnSettings(spawnBuilder.build())
+                .specialEffects((new BiomeSpecialEffects.Builder())
+                        .waterColor(0x7af9fd)
+                        .waterFogColor(0xccd5f2)
+                        .skyColor(0xb7edf7)
+                        .grassColorOverride(0x85f3c1)
+                        .foliageColorOverride(0x85f3b0)
+                        .fogColor(0xf4caff)
                         .ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS)
                         .backgroundMusic(Musics.createGameMusic(SoundEvents.MUSIC_GAME)).build())
                 .build();
