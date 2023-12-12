@@ -5,6 +5,8 @@ import com.elvenwhiskers.starfall.item.ModCreativeModeTabs;
 import com.elvenwhiskers.starfall.item.ModItems;
 import com.elvenwhiskers.starfall.worldgen.biome.ModTerraBlenderAPI;
 import com.elvenwhiskers.starfall.worldgen.biome.surface.ModSurfaceRules;
+import com.elvenwhiskers.starfall.worldgen.tree.ModFoliagePlacerTypes;
+import com.elvenwhiskers.starfall.worldgen.tree.ModTrunkPlacerTypes;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
@@ -37,6 +39,8 @@ public class Starfall {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModTrunkPlacerTypes.register(modEventBus);
+        ModFoliagePlacerTypes.register(modEventBus);
 
         ModTerraBlenderAPI.registerRegions();
 

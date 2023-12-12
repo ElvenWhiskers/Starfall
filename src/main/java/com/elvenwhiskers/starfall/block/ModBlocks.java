@@ -3,6 +3,7 @@ package com.elvenwhiskers.starfall.block;
 import com.elvenwhiskers.starfall.Starfall;
 import com.elvenwhiskers.starfall.block.custom.*;
 import com.elvenwhiskers.starfall.item.ModItems;
+import com.elvenwhiskers.starfall.worldgen.tree.LarkspurTreeGrower;
 import com.elvenwhiskers.starfall.worldgen.tree.MagnoliaTreeGrower;
 import com.elvenwhiskers.starfall.worldgen.tree.OpalTreeGrower;
 import net.minecraft.sounds.SoundEvents;
@@ -203,7 +204,7 @@ public class ModBlocks  {
     public static final RegistryObject<Block> LARKSPUR_PLANKS = registerBlock("larkspur_planks",
             () -> new ModFlammablePlanks(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> LARKSPUR_SAPLING = registerBlock("larkspur_sapling",
-            () -> new SaplingBlock(new MagnoliaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new LarkspurTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> LARKSPUR_STAIRS = registerBlock("larkspur_stairs",
             () -> new StairBlock(() -> ModBlocks.LARKSPUR_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)));
