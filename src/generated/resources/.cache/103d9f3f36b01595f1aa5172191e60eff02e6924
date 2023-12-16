@@ -1,10 +1,10 @@
-// 1.20.1	2023-12-02T11:02:51.851358	Registries
+// 1.20.1	2023-12-16T10:25:12.1713973	Registries
 d1997382861fcefd39c3188bcb9bed6b12af0ee7 data/starfall/dimension/starfalldim.json
 8b7750a61e4cdcf54a8c14ef062f23d71a8d588b data/starfall/dimension_type/starfalldim_type.json
 23c75603d92f596e39b928a66560c58176e606fb data/starfall/worldgen/biome/crystal_forest.json
 f640f0a43ef5aa1fd1eeba508d2f306047af3933 data/starfall/worldgen/biome/flower_meadow.json
 e72f5fc51d688f31606ce1ce1ac5d0ca00970505 data/starfall/worldgen/biome/lost_plains.json
-696da6a4832973c6621cc92a71a2718b8dec9ab6 data/starfall/worldgen/configured_feature/larkspur.json
+6fe21c8ad79b7dbed05f60b04f0053d747092462 data/starfall/worldgen/configured_feature/larkspur.json
 8bd37a1306613ad7ca5850e81b3f68d998a3725b data/starfall/worldgen/configured_feature/magnolia.json
 d363070f8b464eb207ff70f31835a803bb6e5fdf data/starfall/worldgen/configured_feature/opalized.json
 0bca3451af6a79dbca2cbe51ee1a91eb3f7e7583 data/starfall/worldgen/placed_feature/larkspur_placed.json
