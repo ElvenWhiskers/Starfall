@@ -47,9 +47,32 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.RAW_AEGIS.get(), RecipeCategory.MISC, ModBlocks.RAW_AEGIS_BLOCK.get(),
                 "starfall:raw_aegis", "aegis","starfall:raw_aegis_block", "aegis");
 
+        oneToOneConversionRecipe(pWriter, Items.BLUE_DYE, ModBlocks.PUFFBALL_BLUE.get(), "dye_blue");
+        oneToOneConversionRecipe(pWriter, Items.PINK_DYE, ModBlocks.PUFFBALL_PINK.get(), "dye_pink");
+        oneToOneConversionRecipe(pWriter, Items.ORANGE_DYE, ModBlocks.PUFFBALL_ORANGE.get(), "dye_orange");
+        oneToOneConversionRecipe(pWriter, Items.PURPLE_DYE, ModBlocks.PUFFBALL_PURPLE.get(), "dye_purple");
+        oneToOneConversionRecipe(pWriter, Items.WHITE_DYE, ModBlocks.PUFFBALL_WHITE.get(), "dye_white");
+
+        simpleColoredCatlinite(pWriter, Items.LIGHT_BLUE_DYE, ModBlocks.LIGHT_BLUE_CATLINITE.get());
+        simpleColoredCatlinite(pWriter, Items.LIME_DYE, ModBlocks.LIME_CATLINITE.get());
+        simpleColoredCatlinite(pWriter, Items.YELLOW_DYE, ModBlocks.YELLOW_CATLINITE.get());
+        simpleColoredCatlinite(pWriter, Items.ORANGE_DYE, ModBlocks.ORANGE_CATLINITE.get());
+        simpleColoredCatlinite(pWriter, Items.BLUE_DYE, ModBlocks.BLUE_CATLINITE.get());
+        simpleColoredCatlinite(pWriter, Items.MAGENTA_DYE, ModBlocks.MAGENTA_CATLINITE.get());
+        simpleColoredCatlinite(pWriter, Items.PURPLE_DYE, ModBlocks.PURPLE_CATLINITE.get());
+        simpleColoredCatlinite(pWriter, Items.PINK_DYE, ModBlocks.PINK_CATLINITE.get());
+
 
         oreSmelting(pWriter, AEGIS_SMELTABLES, RecipeCategory.MISC, ModItems.AEGIS_INGOT.get(), 0.25f, 200, "aegis");
         oreBlasting(pWriter, AEGIS_SMELTABLES, RecipeCategory.MISC, ModItems.AEGIS_INGOT.get(), 0.25f, 100, "aegis");
+
+        SimpleCookingRecipeBuilder.generic(Ingredient.of(ModBlocks.COBBLED_BRIGHTSTONE.get()), RecipeCategory.MISC, ModBlocks.BRIGHTSTONE.get(), 0.25f, 200,
+                        RecipeSerializer.SMELTING_RECIPE).group("stone")
+                .unlockedBy("has_cobbled_brightstone", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.COBBLED_BRIGHTSTONE.get()).build()))
+                .save(pWriter, Starfall.MODID + ":" + getItemName(ModBlocks.BRIGHTSTONE.get()) + "_from_" + getItemName(ModBlocks.COBBLED_BRIGHTSTONE.get()));
+
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BRIGHTSTONE_BRICKS.get(), 4)
                 .pattern("AA")
@@ -184,6 +207,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(pPlanks).build()))
                 .save(pFinishedRecipe, Starfall.MODID + ":" + getItemName(pWall) + "_from_" + getItemName(pPlanks));
 
+    }
+
+    protected static void simpleColoredCatlinite(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pDye, ItemLike pResult){
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, pResult, 8)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .define('A', ModBlocks.CATLINITE.get())
+                .define('B', pDye)
+                .unlockedBy("has_catlinite", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModBlocks.CATLINITE.get()).build()))
+                .save(pFinishedRecipeConsumer);
     }
 
 }
